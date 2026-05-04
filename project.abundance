@@ -1828,7 +1828,8 @@
             },
             {
               "name": "MachineLength",
-              "ioValue": 10
+              "ioValue": 580,
+              "currentEquation": "MachineLength"
             },
             {
               "name": "MachineHeight",
@@ -2059,7 +2060,7 @@
                 },
                 {
                   "name": "MachineLength",
-                  "ioValue": 10,
+                  "ioValue": 580,
                   "currentEquation": "MachineLength"
                 },
                 {
@@ -2167,8 +2168,8 @@
                 },
                 {
                   "atomType": "Rotate",
-                  "x": 0.22653721682847894,
-                  "y": 0.8729792147806004,
+                  "x": 0.2373247033441208,
+                  "y": 0.325635103926097,
                   "uniqueID": "id-4237",
                   "ioValues": [
                     {
@@ -2191,8 +2192,8 @@
                 },
                 {
                   "atomType": "Circle",
-                  "x": 0.16666666666666666,
-                  "y": 0.4457274826789838,
+                  "x": 0.14563106796116507,
+                  "y": 0.9168591224018476,
                   "uniqueID": "id-4249",
                   "ioValues": [
                     {
@@ -2211,8 +2212,8 @@
                 },
                 {
                   "atomType": "Move",
-                  "x": 0.22276159654800431,
-                  "y": 0.7274826789838337,
+                  "x": 0.24433656957928804,
+                  "y": 0.9214780600461893,
                   "uniqueID": "id-4255",
                   "ioValues": [
                     {
@@ -2235,8 +2236,8 @@
                 },
                 {
                   "atomType": "Rotate",
-                  "x": 0.3861920172599784,
-                  "y": 0.5935334872979214,
+                  "x": 0.19956850053937433,
+                  "y": 0.5173210161662818,
                   "uniqueID": "id-4261",
                   "ioValues": [
                     {
@@ -2253,14 +2254,15 @@
                     },
                     {
                       "name": "z-axis degrees",
-                      "ioValue": 0
+                      "ioValue": -9.462322208025617,
+                      "currentEquation": "- UpSlope"
                     }
                   ]
                 },
                 {
                   "atomType": "Move",
-                  "x": 0.45738942826321466,
-                  "y": 0.5773672055427251,
+                  "x": 0.25134843581445526,
+                  "y": 0.5242494226327945,
                   "uniqueID": "id-4267",
                   "ioValues": [
                     {
@@ -2269,7 +2271,7 @@
                     },
                     {
                       "name": "xDist",
-                      "ioValue": 0
+                      "ioValue": 580
                     },
                     {
                       "name": "yDist",
@@ -2283,8 +2285,8 @@
                 },
                 {
                   "atomType": "Move",
-                  "x": 0.32578209277238407,
-                  "y": 0.5404157043879907,
+                  "x": 0.14185544768069042,
+                  "y": 0.4780600461893765,
                   "uniqueID": "id-4273",
                   "ioValues": [
                     {
@@ -2293,8 +2295,8 @@
                     },
                     {
                       "name": "xDist",
-                      "ioValue": -370,
-                      "currentEquation": "MachineLength - AxleX"
+                      "ioValue": -200,
+                      "currentEquation": "-MachineLength + AxleX"
                     },
                     {
                       "name": "yDist",
@@ -2306,6 +2308,13 @@
                       "ioValue": 0
                     }
                   ]
+                },
+                {
+                  "atomType": "Assembly",
+                  "x": 0.43905070118662354,
+                  "y": 0.697459584295612,
+                  "uniqueID": "id-4279",
+                  "ioValues": []
                 }
               ],
               "allConnectors": [
@@ -2338,6 +2347,11 @@
                   "ap2Name": "yDist",
                   "ap1ID": "id-3438",
                   "ap2ID": "id-4255"
+                },
+                {
+                  "ap2Name": "xDist",
+                  "ap1ID": "id-3441",
+                  "ap2ID": "id-4267"
                 },
                 {
                   "ap2Name": "geometry",
