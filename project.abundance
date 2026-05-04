@@ -1802,6 +1802,11 @@
               "name": "NumTeeth",
               "ioValue": 20,
               "currentEquation": "NumTeeth"
+            },
+            {
+              "name": "AxleDiameter",
+              "ioValue": 20,
+              "currentEquation": "AxleDiameter"
             }
           ],
           "topLevel": false,
@@ -1871,7 +1876,7 @@
             {
               "atomType": "Input",
               "x": 0.0165,
-              "y": 0.5196304849884527,
+              "y": 0.52,
               "uniqueID": "id-1175",
               "name": "CoverCurve"
             },
@@ -1885,84 +1890,84 @@
             {
               "atomType": "Input",
               "x": 0.0165,
-              "y": 0.6027713625866051,
+              "y": 0.6400000000000001,
               "uniqueID": "id-1181",
               "name": "ToothHeight"
             },
             {
               "atomType": "Input",
               "x": 0.0165,
-              "y": 0.6258660508083141,
+              "y": 0.7000000000000002,
               "uniqueID": "id-1184",
               "name": "ToothThick"
             },
             {
               "atomType": "Input",
               "x": 0.0165,
-              "y": 0.6558891454965358,
+              "y": 0.7600000000000002,
               "uniqueID": "id-1187",
               "name": "TopThick"
             },
             {
               "atomType": "Input",
               "x": 0.0165,
-              "y": 0.7159353348729792,
+              "y": 0.8200000000000003,
               "uniqueID": "id-1190",
               "name": "BedPlateWidth"
             },
             {
               "atomType": "Input",
               "x": 0.0165,
-              "y": 0.7736720554272518,
+              "y": 0.8800000000000003,
               "uniqueID": "id-1193",
               "name": "BaseHeight"
             },
             {
               "atomType": "Input",
               "x": 0.0165,
-              "y": 0.9168591224018476,
+              "y": 0.9400000000000004,
               "uniqueID": "id-1199",
               "name": "AxleX"
             },
             {
               "atomType": "Input",
               "x": 0.0165,
-              "y": 0.9861431870669746,
+              "y": 0.95,
               "uniqueID": "id-1202",
               "name": "AxleY"
             },
             {
               "atomType": "Input",
               "x": 0.0165,
-              "y": 0.8937644341801385,
+              "y": 0.95,
               "uniqueID": "id-1205",
               "name": "MachineLength"
             },
             {
               "atomType": "Input",
               "x": 0.0165,
-              "y": 0.651270207852194,
+              "y": 0.95,
               "uniqueID": "id-1208",
               "name": "MachineHeight"
             },
             {
               "atomType": "Input",
               "x": 0.0165,
-              "y": 0.836027713625866,
+              "y": 0.95,
               "uniqueID": "id-1283",
               "name": "Clearance"
             },
             {
               "atomType": "Input",
               "x": 0.0165,
-              "y": 0.6605080831408776,
+              "y": 0.95,
               "uniqueID": "id-2126",
               "name": "NumTeeth"
             },
             {
               "atomType": "Molecule",
               "x": 0.1720604099244876,
-              "y": 0.5127020785219399,
+              "y": 0.4942263279445727,
               "uniqueID": "id-1228",
               "name": "BottomSection",
               "ioValues": [
@@ -2371,6 +2376,11 @@
                   "name": "AxleY",
                   "ioValue": 210,
                   "currentEquation": "AxleY"
+                },
+                {
+                  "name": "AxleDiameter",
+                  "ioValue": 20,
+                  "currentEquation": "AxleDiameter"
                 }
               ],
               "topLevel": false,
@@ -2551,6 +2561,135 @@
                   "y": 0.4,
                   "uniqueID": "id-2167",
                   "name": "AxleY"
+                },
+                {
+                  "atomType": "Rotate",
+                  "x": 0.3705501618122978,
+                  "y": 0.6651270207852193,
+                  "uniqueID": "id-3382",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "x-axis degrees",
+                      "ioValue": 0
+                    },
+                    {
+                      "name": "y-axis degrees",
+                      "ioValue": 0
+                    },
+                    {
+                      "name": "z-axis degrees",
+                      "ioValue": 90
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Rotate",
+                  "x": 0.37216828478964403,
+                  "y": 0.8013856812933026,
+                  "uniqueID": "id-3388",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "x-axis degrees",
+                      "ioValue": 0
+                    },
+                    {
+                      "name": "y-axis degrees",
+                      "ioValue": 0
+                    },
+                    {
+                      "name": "z-axis degrees",
+                      "ioValue": 90
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Rotate",
+                  "x": 0.37162891046386193,
+                  "y": 0.9330254041570438,
+                  "uniqueID": "id-3394",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "x-axis degrees",
+                      "ioValue": 0
+                    },
+                    {
+                      "name": "y-axis degrees",
+                      "ioValue": 0
+                    },
+                    {
+                      "name": "z-axis degrees",
+                      "ioValue": 90
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Assembly",
+                  "x": 0.4789644012944984,
+                  "y": 0.6674364896073902,
+                  "uniqueID": "id-3400",
+                  "ioValues": [
+                    {
+                      "name": "Shape 1",
+                      "ioValue": null
+                    },
+                    {
+                      "name": "Shape 2",
+                      "ioValue": null
+                    },
+                    {
+                      "name": "Shape 3",
+                      "ioValue": null
+                    },
+                    {
+                      "name": "Shape 4",
+                      "ioValue": null
+                    },
+                    {
+                      "name": "Shape 6",
+                      "ioValue": null
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Equation",
+                  "x": 0.15480043149946063,
+                  "y": 0.24942263279445726,
+                  "uniqueID": "id-3407",
+                  "name": "r*2",
+                  "ioValues": [
+                    {
+                      "name": "r",
+                      "ioValue": 170
+                    }
+                  ],
+                  "currentEquation": "r*2"
+                },
+                {
+                  "atomType": "Readme",
+                  "x": 0.5064724919093851,
+                  "y": 0.8799076212471131,
+                  "uniqueID": "id-3412",
+                  "name": "README",
+                  "ioValues": [
+                    {
+                      "name": "value",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ],
+                  "readMeText": "This one is made in 4 pieces of 5 to result in 20 rotated pieces. \nYou would need to manually adjust and copy for different numbers of rotor teeth. ",
+                  "global": true
                 },
                 {
                   "atomType": "GitHubMolecule",
@@ -5542,131 +5681,39 @@
                   "lastReloadedFromGithubAt": 1777836316964
                 },
                 {
-                  "atomType": "Rotate",
-                  "x": 0.3705501618122978,
-                  "y": 0.6651270207852193,
-                  "uniqueID": "id-3382",
+                  "atomType": "Input",
+                  "x": 0.0165,
+                  "y": 0.46,
+                  "uniqueID": "id-4221",
+                  "name": "AxleDiameter"
+                },
+                {
+                  "atomType": "Circle",
+                  "x": 0.15156418554476808,
+                  "y": 0.5935334872979214,
+                  "uniqueID": "id-4224",
+                  "ioValues": [
+                    {
+                      "name": "diameter",
+                      "ioValue": 20
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Extrude",
+                  "x": 0.20550161812297735,
+                  "y": 0.6143187066974596,
+                  "uniqueID": "id-4228",
                   "ioValues": [
                     {
                       "name": "geometry",
                       "ioValue": "__GEOMETRY_INPUT__"
                     },
                     {
-                      "name": "x-axis degrees",
-                      "ioValue": 0
-                    },
-                    {
-                      "name": "y-axis degrees",
-                      "ioValue": 0
-                    },
-                    {
-                      "name": "z-axis degrees",
-                      "ioValue": 90,
-                      "currentEquation": "90"
+                      "name": "height",
+                      "ioValue": 10
                     }
                   ]
-                },
-                {
-                  "atomType": "Rotate",
-                  "x": 0.37216828478964403,
-                  "y": 0.8013856812933026,
-                  "uniqueID": "id-3388",
-                  "ioValues": [
-                    {
-                      "name": "geometry",
-                      "ioValue": "__GEOMETRY_INPUT__"
-                    },
-                    {
-                      "name": "x-axis degrees",
-                      "ioValue": 0
-                    },
-                    {
-                      "name": "y-axis degrees",
-                      "ioValue": 0
-                    },
-                    {
-                      "name": "z-axis degrees",
-                      "ioValue": 90,
-                      "currentEquation": "90"
-                    }
-                  ]
-                },
-                {
-                  "atomType": "Rotate",
-                  "x": 0.37162891046386193,
-                  "y": 0.9330254041570438,
-                  "uniqueID": "id-3394",
-                  "ioValues": [
-                    {
-                      "name": "geometry",
-                      "ioValue": "__GEOMETRY_INPUT__"
-                    },
-                    {
-                      "name": "x-axis degrees",
-                      "ioValue": 0
-                    },
-                    {
-                      "name": "y-axis degrees",
-                      "ioValue": 0
-                    },
-                    {
-                      "name": "z-axis degrees",
-                      "ioValue": 90
-                    }
-                  ]
-                },
-                {
-                  "atomType": "Assembly",
-                  "x": 0.4789644012944984,
-                  "y": 0.6674364896073902,
-                  "uniqueID": "id-3400",
-                  "ioValues": [
-                    {
-                      "name": "Shape 1",
-                      "ioValue": null
-                    },
-                    {
-                      "name": "Shape 2",
-                      "ioValue": null
-                    },
-                    {
-                      "name": "Shape 3",
-                      "ioValue": null
-                    },
-                    {
-                      "name": "Shape 4",
-                      "ioValue": null
-                    }
-                  ]
-                },
-                {
-                  "atomType": "Equation",
-                  "x": 0.15480043149946063,
-                  "y": 0.24942263279445726,
-                  "uniqueID": "id-3407",
-                  "name": "r*2",
-                  "ioValues": [
-                    {
-                      "name": "r",
-                      "ioValue": 170
-                    }
-                  ],
-                  "currentEquation": "r*2"
-                },
-                {
-                  "atomType": "Readme",
-                  "x": 0.5064724919093851,
-                  "y": 0.8799076212471131,
-                  "uniqueID": "id-3412",
-                  "name": "README",
-                  "ioValues": [
-                    {
-                      "name": "value",
-                      "ioValue": "__GEOMETRY_INPUT__"
-                    }
-                  ],
-                  "readMeText": "This one is made in 4 pieces of 5 to result in 20 rotated pieces. \nYou would need to manually adjust and copy for different numbers of rotor teeth. ",
-                  "global": true
                 }
               ],
               "allConnectors": [
@@ -5674,6 +5721,11 @@
                   "ap2Name": "height",
                   "ap1ID": "id-1623",
                   "ap2ID": "id-2142"
+                },
+                {
+                  "ap2Name": "height",
+                  "ap1ID": "id-1623",
+                  "ap2ID": "id-4228"
                 },
                 {
                   "ap2Name": "yDist",
@@ -5747,21 +5799,6 @@
                 },
                 {
                   "ap2Name": "geometry",
-                  "ap1ID": "id-1772",
-                  "ap2ID": "id-3382"
-                },
-                {
-                  "ap2Name": "Shape 1",
-                  "ap1ID": "id-1772",
-                  "ap2ID": "id-3400"
-                },
-                {
-                  "ap2Name": "value",
-                  "ap1ID": "id-1772",
-                  "ap2ID": "id-3412"
-                },
-                {
-                  "ap2Name": "geometry",
                   "ap1ID": "id-3382",
                   "ap2ID": "id-3388"
                 },
@@ -5794,9 +5831,46 @@
                   "ap2Name": "diameter",
                   "ap1ID": "id-3407",
                   "ap2ID": "id-2129"
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-1772",
+                  "ap2ID": "id-3382"
+                },
+                {
+                  "ap2Name": "Shape 1",
+                  "ap1ID": "id-1772",
+                  "ap2ID": "id-3400"
+                },
+                {
+                  "ap2Name": "value",
+                  "ap1ID": "id-1772",
+                  "ap2ID": "id-3412"
+                },
+                {
+                  "ap2Name": "diameter",
+                  "ap1ID": "id-4221",
+                  "ap2ID": "id-4224"
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-4224",
+                  "ap2ID": "id-4228"
+                },
+                {
+                  "ap2Name": "Shape 6",
+                  "ap1ID": "id-4228",
+                  "ap2ID": "id-3400"
                 }
               ],
               "fileTypeVersion": 1
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0165,
+              "y": 0.95,
+              "uniqueID": "id-4216",
+              "name": "AxleDiameter"
             }
           ],
           "allConnectors": [
