@@ -2347,17 +2347,43 @@
                 },
                 {
                   "atomType": "Rectangle",
-                  "x": 0.564185544768069,
-                  "y": 0.7944572748267898,
+                  "x": 0.5097087378640777,
+                  "y": 0.8683602771362586,
                   "uniqueID": "id-4290",
                   "ioValues": [
                     {
                       "name": "x length",
-                      "ioValue": 10
+                      "ioValue": 40
                     },
                     {
                       "name": "y length",
-                      "ioValue": 10
+                      "ioValue": 30
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Move",
+                  "x": 0.5943905070118662,
+                  "y": 0.8775981524249422,
+                  "uniqueID": "id-4294",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "xDist",
+                      "ioValue": 380,
+                      "currentEquation": "AxleX"
+                    },
+                    {
+                      "name": "yDist",
+                      "ioValue": 15,
+                      "currentEquation": ".5 * BaseHeight"
+                    },
+                    {
+                      "name": "zDist",
+                      "ioValue": 0
                     }
                   ]
                 }
@@ -2388,7 +2414,16 @@
                   "ap1ID": "id-3426",
                   "ap2ID": "id-4237"
                 },
-                null,
+                {
+                  "ap2Name": "x length",
+                  "ap1ID": "id-3429",
+                  "ap2ID": "id-4290"
+                },
+                {
+                  "ap2Name": "y length",
+                  "ap1ID": "id-3432",
+                  "ap2ID": "id-4290"
+                },
                 {
                   "ap2Name": "xDist",
                   "ap1ID": "id-3435",
@@ -2438,6 +2473,11 @@
                   "ap2Name": "Shape 4",
                   "ap1ID": "id-4285",
                   "ap2ID": "id-4279"
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-4290",
+                  "ap2ID": "id-4294"
                 }
               ],
               "fileTypeVersion": 1
