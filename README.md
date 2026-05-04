@@ -29,5 +29,18 @@
 
 
 
- 
+ ### PartsContainer
+
+### RotorLayer
+
+### Rotor
+
+This one is made in 4 pieces of 5 to result in 20 rotated pieces. 
+You would need to manually adjust and copy for different numbers of rotor teeth.  
+
+![readme](/readmeid-3412.svg?v=7xjy7i)
+
+
+
+
 

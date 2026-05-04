@@ -2284,13 +2284,13 @@
                 },
                 {
                   "atomType": "Circle",
-                  "x": 0.20280474649406688,
-                  "y": 0.2863741339491917,
+                  "x": 0.22707659115426104,
+                  "y": 0.26558891454965355,
                   "uniqueID": "id-2129",
                   "ioValues": [
                     {
                       "name": "diameter",
-                      "ioValue": 170
+                      "ioValue": 340
                     }
                   ]
                 },
@@ -2358,8 +2358,8 @@
                 },
                 {
                   "atomType": "Move",
-                  "x": 0.2998921251348436,
-                  "y": 0.5473441108545035,
+                  "x": 0.27292340884573896,
+                  "y": 0.5704387990762124,
                   "uniqueID": "id-2152",
                   "ioValues": [
                     {
@@ -5456,6 +5456,83 @@
                       "currentEquation": "90"
                     }
                   ]
+                },
+                {
+                  "atomType": "Rotate",
+                  "x": 0.37162891046386193,
+                  "y": 0.9330254041570438,
+                  "uniqueID": "id-3394",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "x-axis degrees",
+                      "ioValue": 0
+                    },
+                    {
+                      "name": "y-axis degrees",
+                      "ioValue": 0
+                    },
+                    {
+                      "name": "z-axis degrees",
+                      "ioValue": 90
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Assembly",
+                  "x": 0.4789644012944984,
+                  "y": 0.6674364896073902,
+                  "uniqueID": "id-3400",
+                  "ioValues": [
+                    {
+                      "name": "Shape 1",
+                      "ioValue": null
+                    },
+                    {
+                      "name": "Shape 2",
+                      "ioValue": null
+                    },
+                    {
+                      "name": "Shape 3",
+                      "ioValue": null
+                    },
+                    {
+                      "name": "Shape 4",
+                      "ioValue": null
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Equation",
+                  "x": 0.15480043149946063,
+                  "y": 0.24942263279445726,
+                  "uniqueID": "id-3407",
+                  "name": "r*2",
+                  "ioValues": [
+                    {
+                      "name": "r",
+                      "ioValue": 170
+                    }
+                  ],
+                  "currentEquation": "r*2"
+                },
+                {
+                  "atomType": "Readme",
+                  "x": 0.5064724919093851,
+                  "y": 0.8799076212471131,
+                  "uniqueID": "id-3412",
+                  "name": "README",
+                  "ioValues": [
+                    {
+                      "name": "value",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ],
+                  "readMeText": "This one is made in 4 pieces of 5 to result in 20 rotated pieces. \nYou would need to manually adjust and copy for different numbers of rotor teeth. ",
+                  "global": true
                 }
               ],
               "allConnectors": [
@@ -5465,14 +5542,14 @@
                   "ap2ID": "id-2142"
                 },
                 {
-                  "ap2Name": "diameter",
-                  "ap1ID": "id-1626",
-                  "ap2ID": "id-2129"
-                },
-                {
                   "ap2Name": "yDist",
                   "ap1ID": "id-1626",
                   "ap2ID": "id-2152"
+                },
+                {
+                  "ap2Name": "r",
+                  "ap1ID": "id-1626",
+                  "ap2ID": "id-3407"
                 },
                 {
                   "ap2Name": "geometry",
@@ -5540,9 +5617,49 @@
                   "ap2ID": "id-3382"
                 },
                 {
+                  "ap2Name": "Shape 1",
+                  "ap1ID": "id-1772",
+                  "ap2ID": "id-3400"
+                },
+                {
+                  "ap2Name": "value",
+                  "ap1ID": "id-1772",
+                  "ap2ID": "id-3412"
+                },
+                {
                   "ap2Name": "geometry",
                   "ap1ID": "id-3382",
                   "ap2ID": "id-3388"
+                },
+                {
+                  "ap2Name": "Shape 2",
+                  "ap1ID": "id-3382",
+                  "ap2ID": "id-3400"
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-3388",
+                  "ap2ID": "id-3394"
+                },
+                {
+                  "ap2Name": "Shape 3",
+                  "ap1ID": "id-3388",
+                  "ap2ID": "id-3400"
+                },
+                {
+                  "ap2Name": "Shape 4",
+                  "ap1ID": "id-3394",
+                  "ap2ID": "id-3400"
+                },
+                {
+                  "ap2Name": "remove",
+                  "ap1ID": "id-3400",
+                  "ap2ID": "id-2132"
+                },
+                {
+                  "ap2Name": "diameter",
+                  "ap1ID": "id-3407",
+                  "ap2ID": "id-2129"
                 }
               ],
               "fileTypeVersion": 1
