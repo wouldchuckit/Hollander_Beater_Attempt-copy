@@ -2167,8 +2167,8 @@
                 },
                 {
                   "atomType": "Rotate",
-                  "x": 0.15695792880258902,
-                  "y": 0.8406466512702079,
+                  "x": 0.22653721682847894,
+                  "y": 0.8729792147806004,
                   "uniqueID": "id-4237",
                   "ioValues": [
                     {
@@ -2191,14 +2191,14 @@
                 },
                 {
                   "atomType": "Circle",
-                  "x": 0.18230852211434734,
-                  "y": 0.4503464203233256,
+                  "x": 0.16666666666666666,
+                  "y": 0.4457274826789838,
                   "uniqueID": "id-4249",
                   "ioValues": [
                     {
                       "name": "diameter",
-                      "ioValue": 10,
-                      "currentEquation": "10"
+                      "ioValue": 350,
+                      "currentEquation": "2*RotorRadius + 2 * ToothHeight"
                     }
                   ]
                 },
@@ -2208,6 +2208,54 @@
                   "y": 0.7600000000000002,
                   "uniqueID": "id-4252",
                   "name": "ToothHeight"
+                },
+                {
+                  "atomType": "Move",
+                  "x": 0.22276159654800431,
+                  "y": 0.7274826789838337,
+                  "uniqueID": "id-4255",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "xDist",
+                      "ioValue": 380
+                    },
+                    {
+                      "name": "yDist",
+                      "ioValue": 210
+                    },
+                    {
+                      "name": "zDist",
+                      "ioValue": 0
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Rotate",
+                  "x": 0.3182308522114347,
+                  "y": 0.6558891454965358,
+                  "uniqueID": "id-4261",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "x-axis degrees",
+                      "ioValue": 0
+                    },
+                    {
+                      "name": "y-axis degrees",
+                      "ioValue": 0
+                    },
+                    {
+                      "name": "z-axis degrees",
+                      "ioValue": 0
+                    }
+                  ]
                 }
               ],
               "allConnectors": [
@@ -2225,6 +2273,21 @@
                   "ap2Name": "z-axis degrees",
                   "ap1ID": "id-3426",
                   "ap2ID": "id-4237"
+                },
+                {
+                  "ap2Name": "xDist",
+                  "ap1ID": "id-3435",
+                  "ap2ID": "id-4255"
+                },
+                {
+                  "ap2Name": "yDist",
+                  "ap1ID": "id-3438",
+                  "ap2ID": "id-4255"
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-4249",
+                  "ap2ID": "id-4255"
                 }
               ],
               "fileTypeVersion": 1
