@@ -2198,8 +2198,8 @@
                   "ioValues": [
                     {
                       "name": "diameter",
-                      "ioValue": 350,
-                      "currentEquation": "2*RotorRadius + 2 * ToothHeight"
+                      "ioValue": 360,
+                      "currentEquation": "2*RotorRadius + 4 * ToothHeight"
                     }
                   ]
                 },
@@ -2212,8 +2212,8 @@
                 },
                 {
                   "atomType": "Move",
-                  "x": 0.24433656957928804,
-                  "y": 0.9214780600461893,
+                  "x": 0.2518878101402373,
+                  "y": 0.9006928406466512,
                   "uniqueID": "id-4255",
                   "ioValues": [
                     {
@@ -2311,8 +2311,8 @@
                 },
                 {
                   "atomType": "Assembly",
-                  "x": 0.43905070118662354,
-                  "y": 0.697459584295612,
+                  "x": 0.42502696871628914,
+                  "y": 0.5866050808314087,
                   "uniqueID": "id-4279",
                   "ioValues": [
                     {
@@ -2344,6 +2344,22 @@
                       "ioValue": 10
                     }
                   ]
+                },
+                {
+                  "atomType": "Rectangle",
+                  "x": 0.564185544768069,
+                  "y": 0.7944572748267898,
+                  "uniqueID": "id-4290",
+                  "ioValues": [
+                    {
+                      "name": "x length",
+                      "ioValue": 10
+                    },
+                    {
+                      "name": "y length",
+                      "ioValue": 10
+                    }
+                  ]
                 }
               ],
               "allConnectors": [
@@ -2372,6 +2388,7 @@
                   "ap1ID": "id-3426",
                   "ap2ID": "id-4237"
                 },
+                null,
                 {
                   "ap2Name": "xDist",
                   "ap1ID": "id-3435",
