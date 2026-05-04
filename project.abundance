@@ -2293,11 +2293,13 @@
                     },
                     {
                       "name": "xDist",
-                      "ioValue": 0
+                      "ioValue": -370,
+                      "currentEquation": "MachineLength - AxleX"
                     },
                     {
                       "name": "yDist",
-                      "ioValue": 0
+                      "ioValue": 0,
+                      "currentEquation": "0"
                     },
                     {
                       "name": "zDist",
@@ -2316,6 +2318,11 @@
                   "ap2Name": "geometry",
                   "ap1ID": "id-3414",
                   "ap2ID": "id-4237"
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-3414",
+                  "ap2ID": "id-4273"
                 },
                 {
                   "ap2Name": "z-axis degrees",
