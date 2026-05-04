@@ -1337,8 +1337,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.11488673139158576,
-          "y": 0.21247113163972287,
+          "x": 0.1353829557713053,
+          "y": 0.3002309468822171,
           "uniqueID": "id-981",
           "name": "MachineBlock",
           "ioValues": [
@@ -1438,7 +1438,17 @@
               "atomType": "Rectangle",
               "x": 0.21682847896440127,
               "y": 0.2586605080831409,
-              "uniqueID": "id-1095"
+              "uniqueID": "id-1095",
+              "ioValues": [
+                {
+                  "name": "x length",
+                  "ioValue": 580
+                },
+                {
+                  "name": "y length",
+                  "ioValue": 430
+                }
+              ]
             },
             {
               "atomType": "Circle",
@@ -1477,6 +1487,12 @@
               "y": 0.3510392609699769,
               "uniqueID": "id-1108",
               "name": "x/2",
+              "ioValues": [
+                {
+                  "name": "x",
+                  "ioValue": 580
+                }
+              ],
               "currentEquation": "x/2"
             },
             {
@@ -1485,6 +1501,12 @@
               "y": 0.44110854503464203,
               "uniqueID": "id-1112",
               "name": "y/2",
+              "ioValues": [
+                {
+                  "name": "y",
+                  "ioValue": 430
+                }
+              ],
               "currentEquation": "y/2"
             },
             {
@@ -1496,6 +1518,14 @@
                 {
                   "name": "geometry",
                   "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "xDist",
+                  "ioValue": 290
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": 215
                 },
                 {
                   "name": "zDist",
@@ -1512,6 +1542,14 @@
                 {
                   "name": "geometry",
                   "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "xDist",
+                  "ioValue": 380
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": 210
                 },
                 {
                   "name": "zDist",
@@ -1533,6 +1571,10 @@
                   "name": "xDist",
                   "ioValue": 22.5,
                   "currentEquation": "1.5 * HingeAxleDiameter"
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": 210
                 },
                 {
                   "name": "zDist",
@@ -1574,8 +1616,8 @@
             },
             {
               "atomType": "Extrude",
-              "x": 0.5614886731391586,
-              "y": 0.3879907621247113,
+              "x": 0.5587918015102481,
+              "y": 0.3903002309468822,
               "uniqueID": "id-1143",
               "ioValues": [
                 {
@@ -1700,8 +1742,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.21197411003236247,
-          "y": 0.40877598152424943,
+          "x": 0.2243797195253506,
+          "y": 0.4549653579676674,
           "uniqueID": "id-1147",
           "name": "RotorLayer",
           "ioValues": [
@@ -1925,42 +1967,42 @@
             {
               "atomType": "Input",
               "x": 0.0165,
-              "y": 0.9400000000000004,
+              "y": 0.953810623556582,
               "uniqueID": "id-1199",
               "name": "AxleX"
             },
             {
               "atomType": "Input",
               "x": 0.0165,
-              "y": 0.95,
+              "y": 0.7713625866050808,
               "uniqueID": "id-1202",
               "name": "AxleY"
             },
             {
               "atomType": "Input",
               "x": 0.0165,
-              "y": 0.95,
+              "y": 0.7575057736720554,
               "uniqueID": "id-1205",
               "name": "MachineLength"
             },
             {
               "atomType": "Input",
               "x": 0.0165,
-              "y": 0.95,
+              "y": 0.7806004618937644,
               "uniqueID": "id-1208",
               "name": "MachineHeight"
             },
             {
               "atomType": "Input",
               "x": 0.0165,
-              "y": 0.95,
+              "y": 0.8013856812933026,
               "uniqueID": "id-1283",
               "name": "Clearance"
             },
             {
               "atomType": "Input",
               "x": 0.0165,
-              "y": 0.95,
+              "y": 0.7713625866050808,
               "uniqueID": "id-2126",
               "name": "NumTeeth"
             },
@@ -2119,7 +2161,13 @@
                   "name": "Clearance"
                 }
               ],
-              "allConnectors": [],
+              "allConnectors": [
+                {
+                  "ap2Name": "number or geometry",
+                  "ap1ID": "id-3414",
+                  "ap2ID": "id-1230"
+                }
+              ],
               "fileTypeVersion": 1
             },
             {
@@ -5868,7 +5916,7 @@
             {
               "atomType": "Input",
               "x": 0.0165,
-              "y": 0.95,
+              "y": 0.6905311778290993,
               "uniqueID": "id-4216",
               "name": "AxleDiameter"
             }
