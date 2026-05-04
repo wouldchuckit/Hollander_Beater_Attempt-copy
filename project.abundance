@@ -2386,6 +2386,39 @@
                       "ioValue": 0
                     }
                   ]
+                },
+                {
+                  "atomType": "Difference",
+                  "x": 0.5857605177993528,
+                  "y": 0.5011547344110855,
+                  "uniqueID": "id-4300",
+                  "ioValues": [
+                    {
+                      "name": "retain",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "remove",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Extrude",
+                  "x": 0.6661272923408845,
+                  "y": 0.8545034642032332,
+                  "uniqueID": "id-4304",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "height",
+                      "ioValue": 10,
+                      "currentEquation": "WoodThick"
+                    }
+                  ]
                 }
               ],
               "allConnectors": [
@@ -2470,6 +2503,11 @@
                   "ap2ID": "id-4261"
                 },
                 {
+                  "ap2Name": "retain",
+                  "ap1ID": "id-4279",
+                  "ap2ID": "id-4300"
+                },
+                {
                   "ap2Name": "Shape 4",
                   "ap1ID": "id-4285",
                   "ap2ID": "id-4279"
@@ -2478,6 +2516,16 @@
                   "ap2Name": "geometry",
                   "ap1ID": "id-4290",
                   "ap2ID": "id-4294"
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-4294",
+                  "ap2ID": "id-4304"
+                },
+                {
+                  "ap2Name": "remove",
+                  "ap1ID": "id-4304",
+                  "ap2ID": "id-4300"
                 }
               ],
               "fileTypeVersion": 1
