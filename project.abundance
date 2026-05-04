@@ -2066,6 +2066,11 @@
                   "name": "Clearance",
                   "ioValue": 5,
                   "currentEquation": "Clearance"
+                },
+                {
+                  "name": "ToothHeight",
+                  "ioValue": 5,
+                  "currentEquation": "ToothHeight"
                 }
               ],
               "topLevel": false,
@@ -2159,6 +2164,50 @@
                   "y": 0.7000000000000002,
                   "uniqueID": "id-3444",
                   "name": "Clearance"
+                },
+                {
+                  "atomType": "Rotate",
+                  "x": 0.15695792880258902,
+                  "y": 0.8406466512702079,
+                  "uniqueID": "id-4237",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "x-axis degrees",
+                      "ioValue": 0
+                    },
+                    {
+                      "name": "y-axis degrees",
+                      "ioValue": 0
+                    },
+                    {
+                      "name": "z-axis degrees",
+                      "ioValue": 45
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Circle",
+                  "x": 0.18230852211434734,
+                  "y": 0.4503464203233256,
+                  "uniqueID": "id-4249",
+                  "ioValues": [
+                    {
+                      "name": "diameter",
+                      "ioValue": 10,
+                      "currentEquation": "10"
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.0165,
+                  "y": 0.7600000000000002,
+                  "uniqueID": "id-4252",
+                  "name": "ToothHeight"
                 }
               ],
               "allConnectors": [
@@ -2166,6 +2215,16 @@
                   "ap2Name": "number or geometry",
                   "ap1ID": "id-3414",
                   "ap2ID": "id-1230"
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-3414",
+                  "ap2ID": "id-4237"
+                },
+                {
+                  "ap2Name": "z-axis degrees",
+                  "ap1ID": "id-3426",
+                  "ap2ID": "id-4237"
                 }
               ],
               "fileTypeVersion": 1
