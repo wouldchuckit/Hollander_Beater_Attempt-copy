@@ -2973,6 +2973,67 @@
                     }
                   ],
                   "currentEquation": "x/2"
+                },
+                {
+                  "atomType": "Rectangle",
+                  "x": 0.25728155339805825,
+                  "y": 0.5080831408775981,
+                  "uniqueID": "id-5287",
+                  "ioValues": [
+                    {
+                      "name": "x length",
+                      "ioValue": 268.46787517317597
+                    },
+                    {
+                      "name": "y length",
+                      "ioValue": 180,
+                      "currentEquation": "10"
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Equation",
+                  "x": 0.08737864077669903,
+                  "y": 0.5866050808314087,
+                  "uniqueID": "id-5291",
+                  "name": "RotorRadius + ToothHeight + Clearance",
+                  "currentEquation": "RotorRadius + ToothHeight + Clearance"
+                },
+                {
+                  "atomType": "Move",
+                  "x": 0.32470334412081986,
+                  "y": 0.5150115473441108,
+                  "uniqueID": "id-5295",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "xDist",
+                      "ioValue": 134.23393758658798
+                    },
+                    {
+                      "name": "yDist",
+                      "ioValue": 0
+                    },
+                    {
+                      "name": "zDist",
+                      "ioValue": 0
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Circle",
+                  "x": 0.2626752966558792,
+                  "y": 0.6789838337182448,
+                  "uniqueID": "id-5301",
+                  "ioValues": [
+                    {
+                      "name": "diameter",
+                      "ioValue": 10
+                    }
+                  ]
                 }
               ],
               "allConnectors": [
@@ -3030,6 +3091,26 @@
                   "ap2Name": "x",
                   "ap1ID": "id-5280",
                   "ap2ID": "id-5283"
+                },
+                {
+                  "ap2Name": "x length",
+                  "ap1ID": "id-5280",
+                  "ap2ID": "id-5287"
+                },
+                {
+                  "ap2Name": "xDist",
+                  "ap1ID": "id-5283",
+                  "ap2ID": "id-5295"
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-5287",
+                  "ap2ID": "id-5295"
+                },
+                {
+                  "ap2Name": "y length",
+                  "ap1ID": "id-5291",
+                  "ap2ID": "id-5287"
                 }
               ],
               "fileTypeVersion": 1
