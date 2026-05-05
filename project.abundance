@@ -2946,21 +2946,19 @@
                 },
                 {
                   "atomType": "Equation",
-                  "x": 0.13214670981661272,
-                  "y": 0.6951501154734411,
+                  "x": 0.11812297734627833,
+                  "y": 0.6535796766743649,
                   "uniqueID": "id-5275",
-                  "name": "x + y",
-                  "ioValues": [
-                    {
-                      "name": "x",
-                      "ioValue": 1
-                    },
-                    {
-                      "name": "y",
-                      "ioValue": 1
-                    }
-                  ],
-                  "currentEquation": "x + y"
+                  "name": "(RotorRadius + ToothHeight + Clearance)/sin(TopSlope*pi/180)",
+                  "currentEquation": "(RotorRadius + ToothHeight + Clearance)/sin(TopSlope*pi/180)"
+                },
+                {
+                  "atomType": "Equation",
+                  "x": 0.11596548004314995,
+                  "y": 0.7806004618937644,
+                  "uniqueID": "id-5280",
+                  "name": "(RotorRadius + ToothHeight + Clearance)/tan(TopSlope*pi/180)",
+                  "currentEquation": "(RotorRadius + ToothHeight + Clearance)/tan(TopSlope*pi/180)"
                 }
               ],
               "allConnectors": [
