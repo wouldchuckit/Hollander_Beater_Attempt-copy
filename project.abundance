@@ -2491,6 +2491,22 @@
                       "ioValue": "__GEOMETRY_INPUT__"
                     }
                   ]
+                },
+                {
+                  "atomType": "Tag",
+                  "x": 0.7637540453074433,
+                  "y": 0.44110854503464203,
+                  "uniqueID": "id-5237",
+                  "name": "BottomOfRotorSection",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ],
+                  "tags": [
+                    "BottomOfRotorSection"
+                  ]
                 }
               ],
               "allConnectors": [
@@ -2620,8 +2636,13 @@
                   "ap2ID": "id-5140"
                 },
                 {
-                  "ap2Name": "number or geometry",
+                  "ap2Name": "geometry",
                   "ap1ID": "id-5179",
+                  "ap2ID": "id-5237"
+                },
+                {
+                  "ap2Name": "number or geometry",
+                  "ap1ID": "id-5237",
                   "ap2ID": "id-1230"
                 }
               ],
@@ -2640,7 +2661,8 @@
                 },
                 {
                   "name": "WoodThick",
-                  "ioValue": 10
+                  "ioValue": 10,
+                  "currentEquation": "WoodThick"
                 },
                 {
                   "name": "HingeAxleDiameter",
@@ -2803,9 +2825,45 @@
                   "y": 0.8800000000000003,
                   "uniqueID": "id-5231",
                   "name": "WaterHeight"
+                },
+                {
+                  "atomType": "Assembly",
+                  "x": 0.7276159654800431,
+                  "y": 0.4387990762124711,
+                  "uniqueID": "id-5234",
+                  "ioValues": [
+                    {
+                      "name": "Shape 1",
+                      "ioValue": null
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Circle",
+                  "x": 0.2184466019417476,
+                  "y": 0.46420323325635104,
+                  "uniqueID": "id-5241",
+                  "ioValues": [
+                    {
+                      "name": "diameter",
+                      "ioValue": 60,
+                      "currentEquation": "2*RotorRadius + 2*ToothHeight+2*Clearance"
+                    }
+                  ]
                 }
               ],
-              "allConnectors": [],
+              "allConnectors": [
+                {
+                  "ap2Name": "Shape 1",
+                  "ap1ID": "id-5192",
+                  "ap2ID": "id-5234"
+                },
+                {
+                  "ap2Name": "number or geometry",
+                  "ap1ID": "id-5234",
+                  "ap2ID": "id-1234"
+                }
+              ],
               "fileTypeVersion": 1
             },
             {
@@ -6716,6 +6774,11 @@
               "ap2Name": "MachineBlock",
               "ap1ID": "id-1151",
               "ap2ID": "id-1228"
+            },
+            {
+              "ap2Name": "MachineBlock",
+              "ap1ID": "id-1151",
+              "ap2ID": "id-1232"
             },
             {
               "ap2Name": "Shape 1",
