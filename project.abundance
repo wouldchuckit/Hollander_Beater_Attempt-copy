@@ -2840,8 +2840,8 @@
                 },
                 {
                   "atomType": "Assembly",
-                  "x": 0.7276159654800431,
-                  "y": 0.4387990762124711,
+                  "x": 0.8182308522114348,
+                  "y": 0.39260969976905313,
                   "uniqueID": "id-5234",
                   "ioValues": [
                     {
@@ -2852,8 +2852,8 @@
                 },
                 {
                   "atomType": "Circle",
-                  "x": 0.16936353829557713,
-                  "y": 0.2748267898383372,
+                  "x": 0.37162891046386193,
+                  "y": 0.15704387990762125,
                   "uniqueID": "id-5241",
                   "ioValues": [
                     {
@@ -2865,8 +2865,8 @@
                 },
                 {
                   "atomType": "Move",
-                  "x": 0.23786407766990292,
-                  "y": 0.2909930715935335,
+                  "x": 0.43257820927723845,
+                  "y": 0.15935334872979215,
                   "uniqueID": "id-5244",
                   "ioValues": [
                     {
@@ -2889,8 +2889,8 @@
                 },
                 {
                   "atomType": "Move",
-                  "x": 0.23516720604099242,
-                  "y": 0.4387990762124711,
+                  "x": 0.49137001078748654,
+                  "y": 0.2956120092378753,
                   "uniqueID": "id-5250",
                   "ioValues": [
                     {
@@ -2914,8 +2914,8 @@
                 },
                 {
                   "atomType": "Assembly",
-                  "x": 0.43905070118662354,
-                  "y": 0.5057736720554272,
+                  "x": 0.5507011866235167,
+                  "y": 0.4387990762124711,
                   "uniqueID": "id-5256",
                   "ioValues": [
                     {
@@ -2930,8 +2930,8 @@
                 },
                 {
                   "atomType": "Extrude",
-                  "x": 0.348435814455232,
-                  "y": 0.3856812933025404,
+                  "x": 0.48597626752966566,
+                  "y": 0.14549653579676675,
                   "uniqueID": "id-5261",
                   "ioValues": [
                     {
@@ -2946,19 +2946,33 @@
                 },
                 {
                   "atomType": "Equation",
-                  "x": 0.11812297734627833,
-                  "y": 0.6535796766743649,
+                  "x": 0.08414239482200647,
+                  "y": 0.20554272517321018,
                   "uniqueID": "id-5275",
-                  "name": "(RotorRadius + ToothHeight + Clearance)/sin(TopSlope*pi/180)",
-                  "currentEquation": "(RotorRadius + ToothHeight + Clearance)/sin(TopSlope*pi/180)"
+                  "name": "(RotorRadius + ToothHeight + Clearance - CoverCurve)/sin(TopSlope*pi/180)",
+                  "currentEquation": "(RotorRadius + ToothHeight + Clearance - CoverCurve)/sin(TopSlope*pi/180)"
                 },
                 {
                   "atomType": "Equation",
-                  "x": 0.11596548004314995,
-                  "y": 0.7806004618937644,
+                  "x": 0.08414239482200647,
+                  "y": 0.33718244803695147,
                   "uniqueID": "id-5280",
-                  "name": "(RotorRadius + ToothHeight + Clearance)/tan(TopSlope*pi/180)",
-                  "currentEquation": "(RotorRadius + ToothHeight + Clearance)/tan(TopSlope*pi/180)"
+                  "name": "(RotorRadius + ToothHeight + Clearance -CoverCurve)/tan(TopSlope*pi/180)",
+                  "currentEquation": "(RotorRadius + ToothHeight + Clearance -CoverCurve)/tan(TopSlope*pi/180)"
+                },
+                {
+                  "atomType": "Equation",
+                  "x": 0.08360302049622438,
+                  "y": 0.45958429561200925,
+                  "uniqueID": "id-5283",
+                  "name": "x/2",
+                  "ioValues": [
+                    {
+                      "name": "x",
+                      "ioValue": 268.46787517317597
+                    }
+                  ],
+                  "currentEquation": "x/2"
                 }
               ],
               "allConnectors": [
@@ -3011,6 +3025,11 @@
                   "ap2Name": "Shape 5",
                   "ap1ID": "id-5261",
                   "ap2ID": "id-5256"
+                },
+                {
+                  "ap2Name": "x",
+                  "ap1ID": "id-5280",
+                  "ap2ID": "id-5283"
                 }
               ],
               "fileTypeVersion": 1
