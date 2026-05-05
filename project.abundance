@@ -2666,51 +2666,63 @@
                 },
                 {
                   "name": "HingeAxleDiameter",
-                  "ioValue": 10
+                  "ioValue": 15,
+                  "currentEquation": "HingeAxleDiameter"
                 },
                 {
                   "name": "RotorRadius",
-                  "ioValue": 10
+                  "ioValue": 170,
+                  "currentEquation": "RotorRadius"
                 },
                 {
                   "name": "TopSlope",
-                  "ioValue": 10
+                  "ioValue": 30,
+                  "currentEquation": "TopSlope"
                 },
                 {
                   "name": "CoverCurve",
-                  "ioValue": 10
+                  "ioValue": 25.00000000000003,
+                  "currentEquation": "CoverCurve"
                 },
                 {
                   "name": "ToothHeight",
-                  "ioValue": 10
+                  "ioValue": 5,
+                  "currentEquation": "ToothHeight"
                 },
                 {
                   "name": "TopThick",
-                  "ioValue": 10
+                  "ioValue": 40,
+                  "currentEquation": "TopThick"
                 },
                 {
                   "name": "AxleX",
-                  "ioValue": 10
+                  "ioValue": 380,
+                  "currentEquation": "AxleX"
                 },
                 {
                   "name": "AxleY",
-                  "ioValue": 10
+                  "ioValue": 210,
+                  "currentEquation": "AxleY"
                 },
                 {
                   "name": "MachineLength",
-                  "ioValue": 10
+                  "ioValue": 580,
+                  "currentEquation": "MachineLength"
                 },
                 {
                   "name": "MachineHeight",
-                  "ioValue": 10
+                  "ioValue": 430,
+                  "currentEquation": "MachineHeight"
                 },
                 {
                   "name": "Clearance",
-                  "ioValue": 10
+                  "ioValue": 5,
+                  "currentEquation": "Clearance"
                 },
                 {
                   "name": "WaterHeight",
-                  "ioValue": 10
+                  "ioValue": 200,
+                  "currentEquation": "WaterHeight"
                 }
               ],
               "topLevel": false,
@@ -2840,14 +2852,75 @@
                 },
                 {
                   "atomType": "Circle",
-                  "x": 0.2184466019417476,
-                  "y": 0.46420323325635104,
+                  "x": 0.16936353829557713,
+                  "y": 0.2748267898383372,
                   "uniqueID": "id-5241",
                   "ioValues": [
                     {
                       "name": "diameter",
-                      "ioValue": 60,
+                      "ioValue": 360,
                       "currentEquation": "2*RotorRadius + 2*ToothHeight+2*Clearance"
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Move",
+                  "x": 0.23570658036677453,
+                  "y": 0.2956120092378753,
+                  "uniqueID": "id-5244",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "xDist",
+                      "ioValue": 380
+                    },
+                    {
+                      "name": "yDist",
+                      "ioValue": 210
+                    },
+                    {
+                      "name": "zDist",
+                      "ioValue": 0
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Move",
+                  "x": 0.23516720604099242,
+                  "y": 0.4387990762124711,
+                  "uniqueID": "id-5250",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "xDist",
+                      "ioValue": 0
+                    },
+                    {
+                      "name": "yDist",
+                      "ioValue": -245,
+                      "currentEquation": "-MachineHeight + WaterHeight -HingeAxleDiameter"
+                    },
+                    {
+                      "name": "zDist",
+                      "ioValue": 0
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Assembly",
+                  "x": 0.4525350593311759,
+                  "y": 0.43187066974595845,
+                  "uniqueID": "id-5256",
+                  "ioValues": [
+                    {
+                      "name": "Shape 1",
+                      "ioValue": null
                     }
                   ]
                 }
@@ -2859,9 +2932,35 @@
                   "ap2ID": "id-5234"
                 },
                 {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-5192",
+                  "ap2ID": "id-5250"
+                },
+                {
+                  "ap2Name": "xDist",
+                  "ap1ID": "id-5216",
+                  "ap2ID": "id-5244"
+                },
+                {
+                  "ap2Name": "yDist",
+                  "ap1ID": "id-5219",
+                  "ap2ID": "id-5244"
+                },
+                {
                   "ap2Name": "number or geometry",
                   "ap1ID": "id-5234",
                   "ap2ID": "id-1234"
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-5241",
+                  "ap2ID": "id-5244"
+                },
+                null,
+                {
+                  "ap2Name": "Shape 1",
+                  "ap1ID": "id-5250",
+                  "ap2ID": "id-5256"
                 }
               ],
               "fileTypeVersion": 1
