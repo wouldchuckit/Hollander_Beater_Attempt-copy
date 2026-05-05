@@ -1156,6 +1156,11 @@
           "name": "NumTeeth",
           "ioValue": 20,
           "currentEquation": "NumTeeth"
+        },
+        {
+          "name": "WaterHeight",
+          "ioValue": 200,
+          "currentEquation": "WaterHeight"
         }
       ],
       "topLevel": false,
@@ -1850,6 +1855,11 @@
               "name": "AxleDiameter",
               "ioValue": 20,
               "currentEquation": "AxleDiameter"
+            },
+            {
+              "name": "WaterHeight",
+              "ioValue": 200,
+              "currentEquation": "WaterHeight"
             }
           ],
           "topLevel": false,
@@ -2082,7 +2092,8 @@
                 },
                 {
                   "name": "WaterHeight",
-                  "ioValue": 10
+                  "ioValue": 200,
+                  "currentEquation": "WaterHeight"
                 }
               ],
               "topLevel": false,
@@ -2179,8 +2190,8 @@
                 },
                 {
                   "atomType": "Rotate",
-                  "x": 0.2373247033441208,
-                  "y": 0.325635103926097,
+                  "x": 0.24433656957928804,
+                  "y": 0.2909930715935335,
                   "uniqueID": "id-4237",
                   "ioValues": [
                     {
@@ -2203,8 +2214,8 @@
                 },
                 {
                   "atomType": "Circle",
-                  "x": 0.14563106796116507,
-                  "y": 0.9168591224018476,
+                  "x": 0.12297734627831715,
+                  "y": 0.9099307159353348,
                   "uniqueID": "id-4249",
                   "ioValues": [
                     {
@@ -2223,8 +2234,8 @@
                 },
                 {
                   "atomType": "Move",
-                  "x": 0.2518878101402373,
-                  "y": 0.9006928406466512,
+                  "x": 0.1936353829557713,
+                  "y": 0.9191685912240185,
                   "uniqueID": "id-4255",
                   "ioValues": [
                     {
@@ -2247,8 +2258,8 @@
                 },
                 {
                   "atomType": "Rotate",
-                  "x": 0.19956850053937433,
-                  "y": 0.5173210161662818,
+                  "x": 0.19039913700107874,
+                  "y": 0.4272517321016166,
                   "uniqueID": "id-4261",
                   "ioValues": [
                     {
@@ -2272,8 +2283,8 @@
                 },
                 {
                   "atomType": "Move",
-                  "x": 0.25134843581445526,
-                  "y": 0.5242494226327945,
+                  "x": 0.24541531823085222,
+                  "y": 0.4434180138568129,
                   "uniqueID": "id-4267",
                   "ioValues": [
                     {
@@ -2296,8 +2307,8 @@
                 },
                 {
                   "atomType": "Move",
-                  "x": 0.14724919093851133,
-                  "y": 0.5658198614318707,
+                  "x": 0.13052858683926646,
+                  "y": 0.42032332563510394,
                   "uniqueID": "id-4273",
                   "ioValues": [
                     {
@@ -2321,8 +2332,8 @@
                 },
                 {
                   "atomType": "Assembly",
-                  "x": 0.42502696871628914,
-                  "y": 0.5866050808314087,
+                  "x": 0.3354908306364617,
+                  "y": 0.4988452655889145,
                   "uniqueID": "id-4279",
                   "ioValues": [
                     {
@@ -2336,13 +2347,17 @@
                     {
                       "name": "Shape 4",
                       "ioValue": null
+                    },
+                    {
+                      "name": "Shape 5",
+                      "ioValue": null
                     }
                   ]
                 },
                 {
                   "atomType": "Extrude",
-                  "x": 0.31014023732470336,
-                  "y": 0.8868360277136258,
+                  "x": 0.25134843581445526,
+                  "y": 0.9099307159353348,
                   "uniqueID": "id-4285",
                   "ioValues": [
                     {
@@ -2357,8 +2372,8 @@
                 },
                 {
                   "atomType": "Rectangle",
-                  "x": 0.5097087378640777,
-                  "y": 0.8683602771362586,
+                  "x": 0.3964401294498382,
+                  "y": 0.8799076212471131,
                   "uniqueID": "id-4290",
                   "ioValues": [
                     {
@@ -2373,8 +2388,8 @@
                 },
                 {
                   "atomType": "Move",
-                  "x": 0.5943905070118662,
-                  "y": 0.8775981524249422,
+                  "x": 0.45738942826321466,
+                  "y": 0.8822170900692841,
                   "uniqueID": "id-4294",
                   "ioValues": [
                     {
@@ -2399,8 +2414,8 @@
                 },
                 {
                   "atomType": "Difference",
-                  "x": 0.5857605177993528,
-                  "y": 0.5011547344110855,
+                  "x": 0.5453074433656958,
+                  "y": 0.7113163972286374,
                   "uniqueID": "id-4300",
                   "ioValues": [
                     {
@@ -2415,8 +2430,8 @@
                 },
                 {
                   "atomType": "Extrude",
-                  "x": 0.6661272923408845,
-                  "y": 0.8545034642032332,
+                  "x": 0.5032362459546926,
+                  "y": 0.8752886836027713,
                   "uniqueID": "id-4304",
                   "ioValues": [
                     {
@@ -2432,8 +2447,8 @@
                 },
                 {
                   "atomType": "Move",
-                  "x": 0.37702265372168287,
-                  "y": 0.3903002309468822,
+                  "x": 0.25134843581445526,
+                  "y": 0.5935334872979214,
                   "uniqueID": "id-5140",
                   "ioValues": [
                     {
@@ -2446,7 +2461,7 @@
                     },
                     {
                       "name": "yDist",
-                      "ioValue": 0
+                      "ioValue": 200
                     },
                     {
                       "name": "zDist",
@@ -2477,6 +2492,11 @@
                   "ap2Name": "geometry",
                   "ap1ID": "id-3414",
                   "ap2ID": "id-4273"
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-3414",
+                  "ap2ID": "id-5140"
                 },
                 {
                   "ap2Name": "height",
@@ -2567,6 +2587,16 @@
                   "ap2Name": "remove",
                   "ap1ID": "id-4304",
                   "ap2ID": "id-4300"
+                },
+                {
+                  "ap2Name": "Shape 5",
+                  "ap1ID": "id-5140",
+                  "ap2ID": "id-4279"
+                },
+                {
+                  "ap2Name": "yDist",
+                  "ap1ID": "id-5146",
+                  "ap2ID": "id-5140"
                 }
               ],
               "fileTypeVersion": 1
@@ -6202,6 +6232,10 @@
                     {
                       "name": "Shape 2",
                       "ioValue": null
+                    },
+                    {
+                      "name": "Shape 3",
+                      "ioValue": null
                     }
                   ]
                 },
@@ -6210,6 +6244,7 @@
                   "x": 0.2081984897518878,
                   "y": 0.8845265588914549,
                   "uniqueID": "id-5160",
+                  "name": "Axle",
                   "ioValues": [
                     {
                       "name": "geometry",
@@ -6217,7 +6252,7 @@
                     }
                   ],
                   "tags": [
-                    ""
+                    "Axle"
                   ]
                 },
                 {
@@ -6235,12 +6270,16 @@
                 },
                 {
                   "atomType": "Assembly",
-                  "x": 0.551779935275081,
-                  "y": 0.5473441108545035,
+                  "x": 0.5361380798274002,
+                  "y": 0.5057736720554272,
                   "uniqueID": "id-5166",
                   "ioValues": [
                     {
                       "name": "Shape 1",
+                      "ioValue": null
+                    },
+                    {
+                      "name": "Shape 2",
                       "ioValue": null
                     }
                   ]
@@ -6353,11 +6392,6 @@
                   "ap2ID": "id-3400"
                 },
                 {
-                  "ap2Name": "remove",
-                  "ap1ID": "id-3400",
-                  "ap2ID": "id-2132"
-                },
-                {
                   "ap2Name": "geometry",
                   "ap1ID": "id-3400",
                   "ap2ID": "id-5149"
@@ -6422,9 +6456,30 @@
                   "ap1ID": "id-5160",
                   "ap2ID": "id-5163"
                 },
-                null
+                {
+                  "ap2Name": "Shape 2",
+                  "ap1ID": "id-5163",
+                  "ap2ID": "id-5166"
+                },
+                {
+                  "ap2Name": "Shape 3",
+                  "ap1ID": "id-5163",
+                  "ap2ID": "id-5155"
+                },
+                {
+                  "ap2Name": "remove",
+                  "ap1ID": "id-5166",
+                  "ap2ID": "id-2132"
+                }
               ],
               "fileTypeVersion": 1
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0165,
+              "y": 0.95,
+              "uniqueID": "id-5172",
+              "name": "WaterHeight"
             }
           ],
           "allConnectors": [
@@ -6445,6 +6500,13 @@
             }
           ],
           "fileTypeVersion": 1
+        },
+        {
+          "atomType": "Input",
+          "x": 0.0165,
+          "y": 0.95,
+          "uniqueID": "id-5175",
+          "name": "WaterHeight"
         }
       ],
       "allConnectors": [
