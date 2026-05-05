@@ -2475,14 +2475,25 @@
                   "y": 0.8200000000000003,
                   "uniqueID": "id-5146",
                   "name": "WaterHeight"
+                },
+                {
+                  "atomType": "Difference",
+                  "x": 0.6078748651564185,
+                  "y": 0.5150115473441108,
+                  "uniqueID": "id-5179",
+                  "ioValues": [
+                    {
+                      "name": "retain",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "remove",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ]
                 }
               ],
               "allConnectors": [
-                {
-                  "ap2Name": "number or geometry",
-                  "ap1ID": "id-3414",
-                  "ap2ID": "id-1230"
-                },
                 {
                   "ap2Name": "geometry",
                   "ap1ID": "id-3414",
@@ -2497,6 +2508,11 @@
                   "ap2Name": "geometry",
                   "ap1ID": "id-3414",
                   "ap2ID": "id-5140"
+                },
+                {
+                  "ap2Name": "retain",
+                  "ap1ID": "id-3414",
+                  "ap2ID": "id-5179"
                 },
                 {
                   "ap2Name": "height",
@@ -2585,6 +2601,11 @@
                 },
                 {
                   "ap2Name": "remove",
+                  "ap1ID": "id-4300",
+                  "ap2ID": "id-5179"
+                },
+                {
+                  "ap2Name": "remove",
                   "ap1ID": "id-4304",
                   "ap2ID": "id-4300"
                 },
@@ -2597,6 +2618,11 @@
                   "ap2Name": "yDist",
                   "ap1ID": "id-5146",
                   "ap2ID": "id-5140"
+                },
+                {
+                  "ap2Name": "number or geometry",
+                  "ap1ID": "id-5179",
+                  "ap2ID": "id-1230"
                 }
               ],
               "fileTypeVersion": 1
@@ -6480,23 +6506,84 @@
               "y": 0.95,
               "uniqueID": "id-5172",
               "name": "WaterHeight"
+            },
+            {
+              "atomType": "Assembly",
+              "x": 0.7448759439050701,
+              "y": 0.5288683602771362,
+              "uniqueID": "id-5183",
+              "ioValues": [
+                {
+                  "name": "Shape 1",
+                  "ioValue": null
+                },
+                {
+                  "name": "Shape 2",
+                  "ioValue": null
+                }
+              ]
+            },
+            {
+              "atomType": "Readme",
+              "x": 0.3597626752966559,
+              "y": 0.8175519630484989,
+              "uniqueID": "id-5188",
+              "name": "README",
+              "ioValues": [
+                {
+                  "name": "value",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "readMeText": "There should be teeth set into the bottom or curve of the bottom section.  All of the hollander wisdom suggets they should be at an angle across the bottom so I will perhaps cut those later by hand. ",
+              "global": true
+            },
+            {
+              "atomType": "Readme",
+              "x": 0.26483279395900755,
+              "y": 0.8960739030023095,
+              "uniqueID": "id-5190",
+              "name": "README",
+              "ioValues": [
+                {
+                  "name": "value",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "readMeText": "I intend to drill holes through the rotor and teeth when it is all assembled for stainless steel screws to go through the teeth to hold them in. Currently thinking diagonal but could do vertically through the tooth with a countersink",
+              "global": true
             }
           ],
           "allConnectors": [
-            {
-              "ap2Name": "number or geometry",
-              "ap1ID": "id-1151",
-              "ap2ID": "id-1149"
-            },
             {
               "ap2Name": "MachineBlock",
               "ap1ID": "id-1151",
               "ap2ID": "id-1228"
             },
             {
+              "ap2Name": "Shape 1",
+              "ap1ID": "id-1228",
+              "ap2ID": "id-5183"
+            },
+            {
+              "ap2Name": "value",
+              "ap1ID": "id-1228",
+              "ap2ID": "id-5188"
+            },
+            {
               "ap2Name": "Tooth",
               "ap1ID": "id-1240",
               "ap2ID": "id-1236"
+            },
+            {
+              "ap2Name": "Shape 2",
+              "ap1ID": "id-1236",
+              "ap2ID": "id-5183"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-5183",
+              "ap2ID": "id-1149"
             }
           ],
           "fileTypeVersion": 1
