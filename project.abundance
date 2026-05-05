@@ -2937,8 +2937,8 @@
                 },
                 {
                   "atomType": "Equation",
-                  "x": 0.19956850053937433,
-                  "y": 0.8175519630484989,
+                  "x": 0.28371089536138083,
+                  "y": 0.6882217090069285,
                   "uniqueID": "id-2147",
                   "name": "360/NT",
                   "ioValues": [
@@ -3085,8 +3085,8 @@
                 },
                 {
                   "atomType": "Assembly",
-                  "x": 0.4789644012944984,
-                  "y": 0.6674364896073902,
+                  "x": 0.4886731391585761,
+                  "y": 0.7113163972286374,
                   "uniqueID": "id-3400",
                   "ioValues": [
                     {
@@ -3103,10 +3103,6 @@
                     },
                     {
                       "name": "Shape 4",
-                      "ioValue": null
-                    },
-                    {
-                      "name": "Shape 6",
                       "ioValue": null
                     }
                   ]
@@ -3149,8 +3145,8 @@
                 },
                 {
                   "atomType": "Circle",
-                  "x": 0.15156418554476808,
-                  "y": 0.5935334872979214,
+                  "x": 0.0668824163969795,
+                  "y": 0.8475750577367206,
                   "uniqueID": "id-4224",
                   "ioValues": [
                     {
@@ -3161,8 +3157,8 @@
                 },
                 {
                   "atomType": "Extrude",
-                  "x": 0.20550161812297735,
-                  "y": 0.6143187066974596,
+                  "x": 0.1348435814455232,
+                  "y": 0.859122401847575,
                   "uniqueID": "id-4228",
                   "ioValues": [
                     {
@@ -6163,6 +6159,91 @@
                   },
                   "fileTypeVersion": 1,
                   "lastReloadedFromGithubAt": 1777836316964
+                },
+                {
+                  "atomType": "Tag",
+                  "x": 0.6504854368932039,
+                  "y": 0.6443418013856812,
+                  "uniqueID": "id-5149",
+                  "name": "RotorTeeth",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ],
+                  "tags": [
+                    "RotorTeeth"
+                  ]
+                },
+                {
+                  "atomType": "Color",
+                  "x": 0.7119741100323624,
+                  "y": 0.6374133949191686,
+                  "uniqueID": "id-5152",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ],
+                  "selectedColor": "Light Blue"
+                },
+                {
+                  "atomType": "Assembly",
+                  "x": 0.7858683926645091,
+                  "y": 0.5912240184757506,
+                  "uniqueID": "id-5155",
+                  "ioValues": [
+                    {
+                      "name": "Shape 1",
+                      "ioValue": null
+                    },
+                    {
+                      "name": "Shape 2",
+                      "ioValue": null
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Tag",
+                  "x": 0.2081984897518878,
+                  "y": 0.8845265588914549,
+                  "uniqueID": "id-5160",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ],
+                  "tags": [
+                    ""
+                  ]
+                },
+                {
+                  "atomType": "Color",
+                  "x": 0.28371089536138083,
+                  "y": 0.8914549653579676,
+                  "uniqueID": "id-5163",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ],
+                  "selectedColor": "Red"
+                },
+                {
+                  "atomType": "Assembly",
+                  "x": 0.551779935275081,
+                  "y": 0.5473441108545035,
+                  "uniqueID": "id-5166",
+                  "ioValues": [
+                    {
+                      "name": "Shape 1",
+                      "ioValue": null
+                    }
+                  ]
                 }
               ],
               "allConnectors": [
@@ -6212,9 +6293,9 @@
                   "ap2ID": "id-2136"
                 },
                 {
-                  "ap2Name": "geometry",
+                  "ap2Name": "Shape 1",
                   "ap1ID": "id-2136",
-                  "ap2ID": "id-2158"
+                  "ap2ID": "id-5155"
                 },
                 {
                   "ap2Name": "retain",
@@ -6277,6 +6358,16 @@
                   "ap2ID": "id-2132"
                 },
                 {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-3400",
+                  "ap2ID": "id-5149"
+                },
+                {
+                  "ap2Name": "Shape 1",
+                  "ap1ID": "id-3400",
+                  "ap2ID": "id-5166"
+                },
+                {
                   "ap2Name": "diameter",
                   "ap1ID": "id-3407",
                   "ap2ID": "id-2129"
@@ -6292,9 +6383,9 @@
                   "ap2ID": "id-4228"
                 },
                 {
-                  "ap2Name": "Shape 6",
+                  "ap2Name": "geometry",
                   "ap1ID": "id-4228",
-                  "ap2ID": "id-3400"
+                  "ap2ID": "id-5160"
                 },
                 {
                   "ap2Name": "geometry",
@@ -6310,7 +6401,28 @@
                   "ap2Name": "value",
                   "ap1ID": "id-1772",
                   "ap2ID": "id-3412"
-                }
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-5149",
+                  "ap2ID": "id-5152"
+                },
+                {
+                  "ap2Name": "Shape 2",
+                  "ap1ID": "id-5152",
+                  "ap2ID": "id-5155"
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-5155",
+                  "ap2ID": "id-2158"
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-5160",
+                  "ap2ID": "id-5163"
+                },
+                null
               ],
               "fileTypeVersion": 1
             }
