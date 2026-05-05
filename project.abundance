@@ -2943,6 +2943,24 @@
                       "ioValue": 10
                     }
                   ]
+                },
+                {
+                  "atomType": "Equation",
+                  "x": 0.13214670981661272,
+                  "y": 0.6951501154734411,
+                  "uniqueID": "id-5275",
+                  "name": "x + y",
+                  "ioValues": [
+                    {
+                      "name": "x",
+                      "ioValue": 1
+                    },
+                    {
+                      "name": "y",
+                      "ioValue": 1
+                    }
+                  ],
+                  "currentEquation": "x + y"
                 }
               ],
               "allConnectors": [
@@ -2970,6 +2988,11 @@
                   "ap2Name": "yDist",
                   "ap1ID": "id-5219",
                   "ap2ID": "id-5244"
+                },
+                {
+                  "ap2Name": "number or geometry",
+                  "ap1ID": "id-5234",
+                  "ap2ID": "id-1234"
                 },
                 {
                   "ap2Name": "geometry",
