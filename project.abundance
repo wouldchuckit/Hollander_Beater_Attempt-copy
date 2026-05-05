@@ -3029,8 +3029,8 @@
                 },
                 {
                   "atomType": "Circle",
-                  "x": 0.2707659115426106,
-                  "y": 0.6743648960739029,
+                  "x": 0.2669902912621359,
+                  "y": 0.6304849884526559,
                   "uniqueID": "id-5301",
                   "ioValues": [
                     {
@@ -3081,6 +3081,10 @@
                     {
                       "name": "Shape 2",
                       "ioValue": null
+                    },
+                    {
+                      "name": "Shape 3",
+                      "ioValue": null
                     }
                   ]
                 },
@@ -3124,8 +3128,8 @@
                 },
                 {
                   "atomType": "Equation",
-                  "x": 0.24056094929881336,
-                  "y": 0.8706697459584295,
+                  "x": 0.1413160733549083,
+                  "y": 0.36027713625866054,
                   "uniqueID": "id-5328",
                   "name": "-x",
                   "ioValues": [
@@ -3201,6 +3205,90 @@
                       "name": "height",
                       "ioValue": 10,
                       "currentEquation": "WoodThick"
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Rectangle",
+                  "x": 0.18878101402373246,
+                  "y": 0.7806004618937644,
+                  "uniqueID": "id-5351",
+                  "ioValues": [
+                    {
+                      "name": "x length",
+                      "ioValue": 50.00000000000006,
+                      "currentEquation": "2 * CoverCurve"
+                    },
+                    {
+                      "name": "y length",
+                      "ioValue": 200,
+                      "currentEquation": "WaterHeight"
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Move",
+                  "x": 0.23570658036677453,
+                  "y": 0.7782909930715934,
+                  "uniqueID": "id-5355",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "xDist",
+                      "ioValue": 0
+                    },
+                    {
+                      "name": "yDist",
+                      "ioValue": -100,
+                      "currentEquation": "-.5 * WaterHeight"
+                    },
+                    {
+                      "name": "zDist",
+                      "ioValue": 0
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Rotate",
+                  "x": 0.27831715210355984,
+                  "y": 0.7782909930715934,
+                  "uniqueID": "id-5361",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "x-axis degrees",
+                      "ioValue": 0
+                    },
+                    {
+                      "name": "y-axis degrees",
+                      "ioValue": 0
+                    },
+                    {
+                      "name": "z-axis degrees",
+                      "ioValue": -30,
+                      "currentEquation": "-TopSlope"
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Rectangle",
+                  "x": 0.39104638619201726,
+                  "y": 0.8244803695150116,
+                  "uniqueID": "id-5368",
+                  "ioValues": [
+                    {
+                      "name": "x length",
+                      "ioValue": 0
+                    },
+                    {
+                      "name": "y length",
+                      "ioValue": 10
                     }
                   ]
                 }
@@ -3350,6 +3438,21 @@
                   "ap2Name": "Shape 7",
                   "ap1ID": "id-5345",
                   "ap2ID": "id-5256"
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-5351",
+                  "ap2ID": "id-5355"
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-5355",
+                  "ap2ID": "id-5361"
+                },
+                {
+                  "ap2Name": "Shape 3",
+                  "ap1ID": "id-5361",
+                  "ap2ID": "id-5313"
                 }
               ],
               "fileTypeVersion": 1
