@@ -1968,44 +1968,51 @@
             {
               "atomType": "Input",
               "x": 0.0165,
-              "y": 0.953810623556582,
+              "y": 0.9400000000000004,
               "uniqueID": "id-1199",
               "name": "AxleX"
             },
             {
               "atomType": "Input",
               "x": 0.0165,
-              "y": 0.7713625866050808,
+              "y": 0.95,
               "uniqueID": "id-1202",
               "name": "AxleY"
             },
             {
               "atomType": "Input",
               "x": 0.0165,
-              "y": 0.7575057736720554,
+              "y": 0.95,
               "uniqueID": "id-1205",
               "name": "MachineLength"
             },
             {
               "atomType": "Input",
               "x": 0.0165,
-              "y": 0.7806004618937644,
+              "y": 0.7528868360277136,
               "uniqueID": "id-1208",
               "name": "MachineHeight"
             },
             {
               "atomType": "Input",
               "x": 0.0165,
-              "y": 0.8013856812933026,
+              "y": 0.7852193995381063,
               "uniqueID": "id-1283",
               "name": "Clearance"
             },
             {
               "atomType": "Input",
               "x": 0.0165,
-              "y": 0.7713625866050808,
+              "y": 0.8198614318706698,
               "uniqueID": "id-2126",
               "name": "NumTeeth"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0165,
+              "y": 0.833718244803695,
+              "uniqueID": "id-4216",
+              "name": "AxleDiameter"
             },
             {
               "atomType": "Molecule",
@@ -2072,6 +2079,10 @@
                   "name": "ToothHeight",
                   "ioValue": 5,
                   "currentEquation": "ToothHeight"
+                },
+                {
+                  "name": "WaterHeight",
+                  "ioValue": 10
                 }
               ],
               "topLevel": false,
@@ -2300,8 +2311,7 @@
                     },
                     {
                       "name": "yDist",
-                      "ioValue": 0,
-                      "currentEquation": "0"
+                      "ioValue": 0
                     },
                     {
                       "name": "zDist",
@@ -2419,6 +2429,37 @@
                       "currentEquation": "WoodThick"
                     }
                   ]
+                },
+                {
+                  "atomType": "Move",
+                  "x": 0.37702265372168287,
+                  "y": 0.3903002309468822,
+                  "uniqueID": "id-5140",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "xDist",
+                      "ioValue": 0
+                    },
+                    {
+                      "name": "yDist",
+                      "ioValue": 0
+                    },
+                    {
+                      "name": "zDist",
+                      "ioValue": 0
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.0165,
+                  "y": 0.8200000000000003,
+                  "uniqueID": "id-5146",
+                  "name": "WaterHeight"
                 }
               ],
               "allConnectors": [
@@ -3098,6 +3139,41 @@
                   ],
                   "readMeText": "This one is made in 4 pieces of 5 to result in 20 rotated pieces. \nYou would need to manually adjust and copy for different numbers of rotor teeth. ",
                   "global": true
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.0165,
+                  "y": 0.46,
+                  "uniqueID": "id-4221",
+                  "name": "AxleDiameter"
+                },
+                {
+                  "atomType": "Circle",
+                  "x": 0.15156418554476808,
+                  "y": 0.5935334872979214,
+                  "uniqueID": "id-4224",
+                  "ioValues": [
+                    {
+                      "name": "diameter",
+                      "ioValue": 20
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Extrude",
+                  "x": 0.20550161812297735,
+                  "y": 0.6143187066974596,
+                  "uniqueID": "id-4228",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "height",
+                      "ioValue": 10
+                    }
+                  ]
                 },
                 {
                   "atomType": "GitHubMolecule",
@@ -6087,41 +6163,6 @@
                   },
                   "fileTypeVersion": 1,
                   "lastReloadedFromGithubAt": 1777836316964
-                },
-                {
-                  "atomType": "Input",
-                  "x": 0.0165,
-                  "y": 0.46,
-                  "uniqueID": "id-4221",
-                  "name": "AxleDiameter"
-                },
-                {
-                  "atomType": "Circle",
-                  "x": 0.15156418554476808,
-                  "y": 0.5935334872979214,
-                  "uniqueID": "id-4224",
-                  "ioValues": [
-                    {
-                      "name": "diameter",
-                      "ioValue": 20
-                    }
-                  ]
-                },
-                {
-                  "atomType": "Extrude",
-                  "x": 0.20550161812297735,
-                  "y": 0.6143187066974596,
-                  "uniqueID": "id-4228",
-                  "ioValues": [
-                    {
-                      "name": "geometry",
-                      "ioValue": "__GEOMETRY_INPUT__"
-                    },
-                    {
-                      "name": "height",
-                      "ioValue": 10
-                    }
-                  ]
                 }
               ],
               "allConnectors": [
@@ -6241,21 +6282,6 @@
                   "ap2ID": "id-2129"
                 },
                 {
-                  "ap2Name": "geometry",
-                  "ap1ID": "id-1772",
-                  "ap2ID": "id-3382"
-                },
-                {
-                  "ap2Name": "Shape 1",
-                  "ap1ID": "id-1772",
-                  "ap2ID": "id-3400"
-                },
-                {
-                  "ap2Name": "value",
-                  "ap1ID": "id-1772",
-                  "ap2ID": "id-3412"
-                },
-                {
                   "ap2Name": "diameter",
                   "ap1ID": "id-4221",
                   "ap2ID": "id-4224"
@@ -6269,16 +6295,24 @@
                   "ap2Name": "Shape 6",
                   "ap1ID": "id-4228",
                   "ap2ID": "id-3400"
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-1772",
+                  "ap2ID": "id-3382"
+                },
+                {
+                  "ap2Name": "Shape 1",
+                  "ap1ID": "id-1772",
+                  "ap2ID": "id-3400"
+                },
+                {
+                  "ap2Name": "value",
+                  "ap1ID": "id-1772",
+                  "ap2ID": "id-3412"
                 }
               ],
               "fileTypeVersion": 1
-            },
-            {
-              "atomType": "Input",
-              "x": 0.0165,
-              "y": 0.6905311778290993,
-              "uniqueID": "id-4216",
-              "name": "AxleDiameter"
             }
           ],
           "allConnectors": [
@@ -6406,6 +6440,11 @@
       "ap2Name": "LiftingBolt",
       "ap1ID": "id-993",
       "ap2ID": "id-770"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-770",
+      "ap2ID": "id-2"
     }
   ],
   "unitsKey": "MM",
