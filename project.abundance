@@ -2927,41 +2927,25 @@
                 },
                 {
                   "atomType": "Assembly",
-                  "x": 0.738942826321467,
-                  "y": 0.48267898383371827,
+                  "x": 0.6618122977346278,
+                  "y": 0.4272517321016166,
                   "uniqueID": "id-5256",
                   "ioValues": [
-                    {
-                      "name": "Shape 7",
-                      "ioValue": null
-                    },
-                    {
-                      "name": "Shape 8",
-                      "ioValue": null
-                    },
                     {
                       "name": "Shape 9",
                       "ioValue": null
                     },
                     {
-                      "name": "Shape 11",
+                      "name": "Shape 12",
                       "ioValue": null
-                    }
-                  ]
-                },
-                {
-                  "atomType": "Extrude",
-                  "x": 0.6321467098166127,
-                  "y": 0.10392609699769054,
-                  "uniqueID": "id-5261",
-                  "ioValues": [
-                    {
-                      "name": "geometry",
-                      "ioValue": "__GEOMETRY_INPUT__"
                     },
                     {
-                      "name": "height",
-                      "ioValue": 10
+                      "name": "Shape 13",
+                      "ioValue": null
+                    },
+                    {
+                      "name": "Shape 14",
+                      "ioValue": null
                     }
                   ]
                 },
@@ -3205,23 +3189,6 @@
                   ]
                 },
                 {
-                  "atomType": "Extrude",
-                  "x": 0.6343042071197411,
-                  "y": 0.5704387990762124,
-                  "uniqueID": "id-5345",
-                  "ioValues": [
-                    {
-                      "name": "geometry",
-                      "ioValue": "__GEOMETRY_INPUT__"
-                    },
-                    {
-                      "name": "height",
-                      "ioValue": 10,
-                      "currentEquation": "WoodThick"
-                    }
-                  ]
-                },
-                {
                   "atomType": "Rectangle",
                   "x": 0.24002157497303125,
                   "y": 0.7713625866050808,
@@ -3344,26 +3311,9 @@
                   ]
                 },
                 {
-                  "atomType": "Extrude",
-                  "x": 0.639697950377562,
-                  "y": 0.8521939953810623,
-                  "uniqueID": "id-5389",
-                  "ioValues": [
-                    {
-                      "name": "geometry",
-                      "ioValue": "__GEOMETRY_INPUT__"
-                    },
-                    {
-                      "name": "height",
-                      "ioValue": 10,
-                      "currentEquation": "WoodThick"
-                    }
-                  ]
-                },
-                {
                   "atomType": "Difference",
-                  "x": 0.8193096008629989,
-                  "y": 0.3394919168591224,
+                  "x": 0.8166127292340885,
+                  "y": 0.41108545034642036,
                   "uniqueID": "id-5394",
                   "ioValues": [
                     {
@@ -3440,25 +3390,9 @@
                   "currentEquation": "WaterHeight/2 - HingeAxleDiameter"
                 },
                 {
-                  "atomType": "Extrude",
-                  "x": 0.6316073354908306,
-                  "y": 0.29792147806004615,
-                  "uniqueID": "id-6420",
-                  "ioValues": [
-                    {
-                      "name": "geometry",
-                      "ioValue": "__GEOMETRY_INPUT__"
-                    },
-                    {
-                      "name": "height",
-                      "ioValue": 10
-                    }
-                  ]
-                },
-                {
                   "atomType": "Tag",
-                  "x": 0.8969795037756203,
-                  "y": 0.4849884526558892,
+                  "x": 0.8888888888888888,
+                  "y": 0.5542725173210161,
                   "uniqueID": "id-6426",
                   "name": "RotorLayerTop",
                   "ioValues": [
@@ -3486,6 +3420,22 @@
                   "uniqueID": "id-6441",
                   "name": "2* CoverCurve",
                   "currentEquation": "2* CoverCurve"
+                },
+                {
+                  "atomType": "Extrude",
+                  "x": 0.7535059331175836,
+                  "y": 0.5773672055427251,
+                  "uniqueID": "id-6448",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "height",
+                      "ioValue": 10
+                    }
+                  ]
                 }
               ],
               "allConnectors": [
@@ -3497,12 +3447,7 @@
                 {
                   "ap2Name": "height",
                   "ap1ID": "id-5195",
-                  "ap2ID": "id-5261"
-                },
-                {
-                  "ap2Name": "height",
-                  "ap1ID": "id-5195",
-                  "ap2ID": "id-6420"
+                  "ap2ID": "id-6448"
                 },
                 {
                   "ap2Name": "xDist",
@@ -3550,19 +3495,14 @@
                   "ap2ID": "id-5244"
                 },
                 {
-                  "ap2Name": "geometry",
+                  "ap2Name": "Shape 9",
                   "ap1ID": "id-5244",
-                  "ap2ID": "id-5261"
-                },
-                {
-                  "ap2Name": "remove",
-                  "ap1ID": "id-5256",
-                  "ap2ID": "id-5394"
-                },
-                {
-                  "ap2Name": "Shape 8",
-                  "ap1ID": "id-5261",
                   "ap2ID": "id-5256"
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-5256",
+                  "ap2ID": "id-6448"
                 },
                 {
                   "ap2Name": "x",
@@ -3655,13 +3595,8 @@
                   "ap2ID": "id-5338"
                 },
                 {
-                  "ap2Name": "geometry",
+                  "ap2Name": "Shape 13",
                   "ap1ID": "id-5338",
-                  "ap2ID": "id-5345"
-                },
-                {
-                  "ap2Name": "Shape 7",
-                  "ap1ID": "id-5345",
                   "ap2ID": "id-5256"
                 },
                 {
@@ -3695,13 +3630,8 @@
                   "ap2ID": "id-5241"
                 },
                 {
-                  "ap2Name": "geometry",
+                  "ap2Name": "Shape 14",
                   "ap1ID": "id-5377",
-                  "ap2ID": "id-5389"
-                },
-                {
-                  "ap2Name": "Shape 9",
-                  "ap1ID": "id-5389",
                   "ap2ID": "id-5256"
                 },
                 {
@@ -3715,9 +3645,9 @@
                   "ap2ID": "id-6404"
                 },
                 {
-                  "ap2Name": "geometry",
+                  "ap2Name": "Shape 12",
                   "ap1ID": "id-6404",
-                  "ap2ID": "id-6420"
+                  "ap2ID": "id-5256"
                 },
                 {
                   "ap2Name": "xDist",
@@ -3728,11 +3658,6 @@
                   "ap2Name": "yDist",
                   "ap1ID": "id-6415",
                   "ap2ID": "id-6404"
-                },
-                {
-                  "ap2Name": "Shape 11",
-                  "ap1ID": "id-6420",
-                  "ap2ID": "id-5256"
                 },
                 {
                   "ap2Name": "number or geometry",
@@ -3753,6 +3678,11 @@
                   "ap2Name": "x length",
                   "ap1ID": "id-6441",
                   "ap2ID": "id-5351"
+                },
+                {
+                  "ap2Name": "remove",
+                  "ap1ID": "id-6448",
+                  "ap2ID": "id-5394"
                 }
               ],
               "fileTypeVersion": 1
