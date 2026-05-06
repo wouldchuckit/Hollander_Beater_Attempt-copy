@@ -2722,7 +2722,8 @@
                 },
                 {
                   "name": "RotorRadius",
-                  "ioValue": 10
+                  "ioValue": 170,
+                  "currentEquation": "RotorRadius"
                 },
                 {
                   "name": "TopSlope",
@@ -2731,7 +2732,8 @@
                 },
                 {
                   "name": "CoverCurve",
-                  "ioValue": 10
+                  "ioValue": 25.00000000000003,
+                  "currentEquation": "CoverCurve"
                 },
                 {
                   "name": "ToothHeight",
@@ -2745,19 +2747,23 @@
                 },
                 {
                   "name": "AxleX",
-                  "ioValue": 10
+                  "ioValue": 380,
+                  "currentEquation": "AxleX"
                 },
                 {
                   "name": "AxleY",
-                  "ioValue": 10
+                  "ioValue": 210,
+                  "currentEquation": "AxleY"
                 },
                 {
                   "name": "MachineLength",
-                  "ioValue": 10
+                  "ioValue": 580,
+                  "currentEquation": "MachineLength"
                 },
                 {
                   "name": "MachineHeight",
-                  "ioValue": 10
+                  "ioValue": 430,
+                  "currentEquation": "MachineHeight"
                 },
                 {
                   "name": "Clearance",
@@ -2897,8 +2903,8 @@
                 },
                 {
                   "atomType": "Circle",
-                  "x": 0.37162891046386193,
-                  "y": 0.15704387990762125,
+                  "x": 0.35760517799352753,
+                  "y": 0.18244803695150116,
                   "uniqueID": "id-5241",
                   "ioValues": [
                     {
@@ -2919,11 +2925,11 @@
                     },
                     {
                       "name": "xDist",
-                      "ioValue": 10
+                      "ioValue": 380
                     },
                     {
                       "name": "yDist",
-                      "ioValue": 10
+                      "ioValue": 210
                     },
                     {
                       "name": "zDist",
@@ -3020,24 +3026,24 @@
                   "ioValues": [
                     {
                       "name": "x",
-                      "ioValue": 17.320508075688775
+                      "ioValue": 268.46787517317597
                     }
                   ],
                   "currentEquation": "x/2"
                 },
                 {
                   "atomType": "Rectangle",
-                  "x": 0.20064724919093854,
-                  "y": 0.5334872979214781,
+                  "x": 0.21682847896440127,
+                  "y": 0.5450346420323325,
                   "uniqueID": "id-5287",
                   "ioValues": [
                     {
                       "name": "x length",
-                      "ioValue": 17.320508075688775
+                      "ioValue": 268.46787517317597
                     },
                     {
                       "name": "y length",
-                      "ioValue": 20
+                      "ioValue": 180
                     }
                   ]
                 },
@@ -3061,11 +3067,11 @@
                     },
                     {
                       "name": "xDist",
-                      "ioValue": 8.660254037844387
+                      "ioValue": 134.23393758658798
                     },
                     {
                       "name": "yDist",
-                      "ioValue": 0
+                      "ioValue": -64.99999999999997
                     },
                     {
                       "name": "zDist",
@@ -3075,8 +3081,8 @@
                 },
                 {
                   "atomType": "Circle",
-                  "x": 0.2669902912621359,
-                  "y": 0.6304849884526559,
+                  "x": 0.24757281553398058,
+                  "y": 0.6327944572748267,
                   "uniqueID": "id-5301",
                   "ioValues": [
                     {
@@ -3094,7 +3100,7 @@
                   "ioValues": [
                     {
                       "name": "y",
-                      "ioValue": 20
+                      "ioValue": 180
                     }
                   ],
                   "currentEquation": "- y/2"
@@ -3108,7 +3114,7 @@
                   "ioValues": [
                     {
                       "name": "Y",
-                      "ioValue": -10
+                      "ioValue": -90
                     }
                   ],
                   "currentEquation": "Y + CoverCurve"
@@ -3145,11 +3151,11 @@
                     },
                     {
                       "name": "xDist",
-                      "ioValue": -17.320508075688775
+                      "ioValue": -268.46787517317597
                     },
                     {
                       "name": "yDist",
-                      "ioValue": 10
+                      "ioValue": 154.99999999999997
                     },
                     {
                       "name": "zDist",
@@ -3166,7 +3172,7 @@
                   "ioValues": [
                     {
                       "name": "y",
-                      "ioValue": 20
+                      "ioValue": 180
                     }
                   ],
                   "currentEquation": "- CoverCurve + y"
@@ -3180,15 +3186,15 @@
                   "ioValues": [
                     {
                       "name": "x",
-                      "ioValue": 17.320508075688775
+                      "ioValue": 268.46787517317597
                     }
                   ],
                   "currentEquation": "-x"
                 },
                 {
                   "atomType": "Rotate",
-                  "x": 0.4471413160733549,
-                  "y": 0.6004618937644342,
+                  "x": 0.4466019417475728,
+                  "y": 0.6304849884526559,
                   "uniqueID": "id-5332",
                   "ioValues": [
                     {
@@ -3326,7 +3332,7 @@
                   "ioValues": [
                     {
                       "name": "x length",
-                      "ioValue": 40
+                      "ioValue": 360
                     },
                     {
                       "name": "y length",
@@ -3344,7 +3350,7 @@
                   "ioValues": [
                     {
                       "name": "R",
-                      "ioValue": 20
+                      "ioValue": 180
                     }
                   ],
                   "currentEquation": "2*R"
@@ -7485,14 +7491,14 @@
               "ap2ID": "id-1236"
             },
             {
-              "ap2Name": "value",
-              "ap1ID": "id-1240",
-              "ap2ID": "id-5190"
-            },
-            {
               "ap2Name": "Shape 2",
               "ap1ID": "id-1236",
               "ap2ID": "id-5183"
+            },
+            {
+              "ap2Name": "value",
+              "ap1ID": "id-1236",
+              "ap2ID": "id-5190"
             }
           ],
           "fileTypeVersion": 1
