@@ -2051,6 +2051,10 @@
                 {
                   "name": "Shape 2",
                   "ioValue": null
+                },
+                {
+                  "name": "Shape 3",
+                  "ioValue": null
                 }
               ]
             },
@@ -3896,7 +3900,8 @@
                 },
                 {
                   "name": "RotorRadius",
-                  "ioValue": 10
+                  "ioValue": 170,
+                  "currentEquation": "RotorRadius"
                 },
                 {
                   "name": "Tooth",
@@ -3909,11 +3914,13 @@
                 },
                 {
                   "name": "AxleX",
-                  "ioValue": 10
+                  "ioValue": 380,
+                  "currentEquation": "AxleX"
                 },
                 {
                   "name": "AxleY",
-                  "ioValue": 10
+                  "ioValue": 210,
+                  "currentEquation": "AxleY"
                 },
                 {
                   "name": "AxleDiameter",
@@ -3972,7 +3979,7 @@
                   "ioValues": [
                     {
                       "name": "diameter",
-                      "ioValue": 20
+                      "ioValue": 340
                     }
                   ]
                 },
@@ -4054,7 +4061,7 @@
                     },
                     {
                       "name": "yDist",
-                      "ioValue": 10
+                      "ioValue": 170
                     },
                     {
                       "name": "zDist",
@@ -4064,8 +4071,8 @@
                 },
                 {
                   "atomType": "Move",
-                  "x": 0.8457389428263214,
-                  "y": 0.48267898383371827,
+                  "x": 0.8522114347357066,
+                  "y": 0.4549653579676674,
                   "uniqueID": "id-2158",
                   "ioValues": [
                     {
@@ -4074,11 +4081,11 @@
                     },
                     {
                       "name": "xDist",
-                      "ioValue": 10
+                      "ioValue": 380
                     },
                     {
                       "name": "yDist",
-                      "ioValue": 10
+                      "ioValue": 210
                     },
                     {
                       "name": "zDist",
@@ -4198,14 +4205,14 @@
                 },
                 {
                   "atomType": "Equation",
-                  "x": 0.15480043149946063,
-                  "y": 0.24942263279445726,
+                  "x": 0.16019417475728157,
+                  "y": 0.24018475750577367,
                   "uniqueID": "id-3407",
                   "name": "r*2",
                   "ioValues": [
                     {
                       "name": "r",
-                      "ioValue": 10
+                      "ioValue": 170
                     }
                   ],
                   "currentEquation": "r*2"
@@ -7342,6 +7349,22 @@
                   },
                   "fileTypeVersion": 1,
                   "lastReloadedFromGithubAt": 1777836316964
+                },
+                {
+                  "atomType": "Tag",
+                  "x": 0.9196332254584682,
+                  "y": 0.41570438799076215,
+                  "uniqueID": "id-6453",
+                  "name": "RotorWithTeeth",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ],
+                  "tags": [
+                    "RotorWithTeeth"
+                  ]
                 }
               ],
               "allConnectors": [
@@ -7411,9 +7434,9 @@
                   "ap2ID": "id-1772"
                 },
                 {
-                  "ap2Name": "number or geometry",
+                  "ap2Name": "geometry",
                   "ap1ID": "id-2158",
-                  "ap2ID": "id-1238"
+                  "ap2ID": "id-6453"
                 },
                 {
                   "ap2Name": "xDist",
@@ -7529,9 +7552,30 @@
                   "ap2Name": "value",
                   "ap1ID": "id-1772",
                   "ap2ID": "id-3412"
+                },
+                {
+                  "ap2Name": "number or geometry",
+                  "ap1ID": "id-6453",
+                  "ap2ID": "id-1238"
                 }
               ],
               "fileTypeVersion": 1
+            },
+            {
+              "atomType": "Tag",
+              "x": 0.860302049622438,
+              "y": 0.5103926096997691,
+              "uniqueID": "id-6456",
+              "name": "RotorLayer",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "tags": [
+                "RotorLayer"
+              ]
             }
           ],
           "allConnectors": [
@@ -7546,9 +7590,9 @@
               "ap2ID": "id-1232"
             },
             {
-              "ap2Name": "number or geometry",
+              "ap2Name": "geometry",
               "ap1ID": "id-5183",
-              "ap2ID": "id-1149"
+              "ap2ID": "id-6456"
             },
             {
               "ap2Name": "Shape 1",
@@ -7559,6 +7603,11 @@
               "ap2Name": "value",
               "ap1ID": "id-1228",
               "ap2ID": "id-5188"
+            },
+            {
+              "ap2Name": "Shape 3",
+              "ap1ID": "id-1232",
+              "ap2ID": "id-5183"
             },
             {
               "ap2Name": "Tooth",
@@ -7574,6 +7623,11 @@
               "ap2Name": "value",
               "ap1ID": "id-1236",
               "ap2ID": "id-5190"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-6456",
+              "ap2ID": "id-1149"
             }
           ],
           "fileTypeVersion": 1
