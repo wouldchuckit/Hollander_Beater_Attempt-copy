@@ -36,7 +36,11 @@
 ### Rotor
 
 This one is made in 4 pieces of 5 to result in 20 rotated pieces. 
-You would need to manually adjust and copy for different numbers of rotor teeth. 
+You would need to manually adjust and copy for different numbers of rotor teeth.  
+
+![readme](/readmeid-3412.svg?v=ncnwnx2)
+
+
 
 There should be teeth set into the bottom or curve of the bottom section.  All of the hollander wisdom suggets they should be at an angle across the bottom so I will perhaps cut those later by hand. 
 
