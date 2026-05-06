@@ -3394,19 +3394,76 @@
                 },
                 {
                   "atomType": "Rectangle",
-                  "x": 0.42826321467098166,
-                  "y": 0.348729792147806,
+                  "x": 0.3748651564185545,
+                  "y": 0.34180138568129326,
                   "uniqueID": "id-6400",
                   "ioValues": [
                     {
                       "name": "x length",
-                      "ioValue": 10
+                      "ioValue": 580
                     },
                     {
                       "name": "y length",
-                      "ioValue": 580
+                      "ioValue": 200
                     }
                   ]
+                },
+                {
+                  "atomType": "Move",
+                  "x": 0.4854368932038835,
+                  "y": 0.3648960739030023,
+                  "uniqueID": "id-6404",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "xDist",
+                      "ioValue": 290
+                    },
+                    {
+                      "name": "yDist",
+                      "ioValue": 0
+                    },
+                    {
+                      "name": "zDist",
+                      "ioValue": 0
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Equation",
+                  "x": 0.4379719525350594,
+                  "y": 0.2909930715935335,
+                  "uniqueID": "id-6410",
+                  "name": "x/2",
+                  "ioValues": [
+                    {
+                      "name": "x",
+                      "ioValue": 580,
+                      "currentEquation": "1"
+                    }
+                  ],
+                  "currentEquation": "x/2"
+                },
+                {
+                  "atomType": "Equation",
+                  "x": 0.43527508090614886,
+                  "y": 0.40415704387990764,
+                  "uniqueID": "id-6415",
+                  "name": "x + y",
+                  "ioValues": [
+                    {
+                      "name": "x",
+                      "ioValue": 1
+                    },
+                    {
+                      "name": "y",
+                      "ioValue": 1
+                    }
+                  ],
+                  "currentEquation": "x + y"
                 }
               ],
               "allConnectors": [
@@ -3436,8 +3493,18 @@
                   "ap2ID": "id-5244"
                 },
                 {
-                  "ap2Name": "y length",
+                  "ap2Name": "x length",
                   "ap1ID": "id-5222",
+                  "ap2ID": "id-6400"
+                },
+                {
+                  "ap2Name": "x",
+                  "ap1ID": "id-5222",
+                  "ap2ID": "id-6410"
+                },
+                {
+                  "ap2Name": "y length",
+                  "ap1ID": "id-5231",
                   "ap2ID": "id-6400"
                 },
                 {
@@ -3604,6 +3671,16 @@
                   "ap2Name": "diameter",
                   "ap1ID": "id-6396",
                   "ap2ID": "id-5241"
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-6400",
+                  "ap2ID": "id-6404"
+                },
+                {
+                  "ap2Name": "xDist",
+                  "ap1ID": "id-6410",
+                  "ap2ID": "id-6404"
                 }
               ],
               "fileTypeVersion": 1
