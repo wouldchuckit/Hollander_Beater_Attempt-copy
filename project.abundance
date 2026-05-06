@@ -5,7 +5,20 @@
   "uniqueID": "id-1",
   "name": "Hollander_Beater_Attempt-copy",
   "topLevel": true,
-  "allAtoms": [],
+  "allAtoms": [
+    {
+      "atomType": "Output",
+      "x": 0.98,
+      "y": 0.5,
+      "uniqueID": "id-2",
+      "ioValues": [
+        {
+          "name": "number or geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    }
+  ],
   "allConnectors": [],
   "unitsKey": "MM",
   "fileTypeVersion": 1,
