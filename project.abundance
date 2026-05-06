@@ -2890,22 +2890,6 @@
                   "name": "WaterHeight"
                 },
                 {
-                  "atomType": "Assembly",
-                  "x": 0.8656957928802589,
-                  "y": 0.4503464203233256,
-                  "uniqueID": "id-5234",
-                  "ioValues": [
-                    {
-                      "name": "Shape 1",
-                      "ioValue": null
-                    },
-                    {
-                      "name": "Shape 2",
-                      "ioValue": null
-                    }
-                  ]
-                },
-                {
                   "atomType": "Circle",
                   "x": 0.4530744336569579,
                   "y": 0.11547344110854503,
@@ -2943,8 +2927,8 @@
                 },
                 {
                   "atomType": "Assembly",
-                  "x": 0.7427184466019416,
-                  "y": 0.17321016166281755,
+                  "x": 0.692017259978425,
+                  "y": 0.3071593533487298,
                   "uniqueID": "id-5256",
                   "ioValues": [
                     {
@@ -3061,20 +3045,20 @@
                 },
                 {
                   "atomType": "Circle",
-                  "x": 0.24757281553398058,
-                  "y": 0.6327944572748267,
+                  "x": 0.24811218985976266,
+                  "y": 0.6443418013856812,
                   "uniqueID": "id-5301",
                   "ioValues": [
                     {
                       "name": "diameter",
-                      "ioValue": 10
+                      "ioValue": 50.00000000000006
                     }
                   ]
                 },
                 {
                   "atomType": "Equation",
-                  "x": 0.09385113268608414,
-                  "y": 0.7113163972286374,
+                  "x": 0.0895361380798274,
+                  "y": 0.6720554272517321,
                   "uniqueID": "id-5304",
                   "name": "- y/2",
                   "ioValues": [
@@ -3087,8 +3071,8 @@
                 },
                 {
                   "atomType": "Equation",
-                  "x": 0.08845738942826321,
-                  "y": 0.8175519630484989,
+                  "x": 0.08791801510248112,
+                  "y": 0.7644341801385681,
                   "uniqueID": "id-5308",
                   "name": "Y + CoverCurve",
                   "ioValues": [
@@ -3121,7 +3105,7 @@
                 },
                 {
                   "atomType": "Move",
-                  "x": 0.39374325782092773,
+                  "x": 0.39428263214670983,
                   "y": 0.6004618937644342,
                   "uniqueID": "id-5318",
                   "ioValues": [
@@ -3145,8 +3129,8 @@
                 },
                 {
                   "atomType": "Equation",
-                  "x": 0.09007551240560949,
-                  "y": 0.9168591224018476,
+                  "x": 0.08845738942826321,
+                  "y": 0.8683602771362586,
                   "uniqueID": "id-5324",
                   "name": "- CoverCurve + y",
                   "ioValues": [
@@ -3198,8 +3182,8 @@
                 },
                 {
                   "atomType": "Move",
-                  "x": 0.5140237324703344,
-                  "y": 0.6327944572748267,
+                  "x": 0.5032362459546926,
+                  "y": 0.6143187066974596,
                   "uniqueID": "id-5338",
                   "ioValues": [
                     {
@@ -3208,11 +3192,11 @@
                     },
                     {
                       "name": "xDist",
-                      "ioValue": 0
+                      "ioValue": 380
                     },
                     {
                       "name": "yDist",
-                      "ioValue": 0
+                      "ioValue": 210
                     },
                     {
                       "name": "zDist",
@@ -3222,8 +3206,8 @@
                 },
                 {
                   "atomType": "Extrude",
-                  "x": 0.5830636461704423,
-                  "y": 0.6073903002309469,
+                  "x": 0.5738942826321467,
+                  "y": 0.6004618937644342,
                   "uniqueID": "id-5345",
                   "ioValues": [
                     {
@@ -3245,7 +3229,7 @@
                   "ioValues": [
                     {
                       "name": "x length",
-                      "ioValue": 10
+                      "ioValue": 50.00000000000006
                     },
                     {
                       "name": "y length",
@@ -3337,8 +3321,8 @@
                 },
                 {
                   "atomType": "Move",
-                  "x": 0.42394822006472493,
-                  "y": 0.9006928406466512,
+                  "x": 0.49892125134843585,
+                  "y": 0.8822170900692841,
                   "uniqueID": "id-5377",
                   "ioValues": [
                     {
@@ -3361,8 +3345,8 @@
                 },
                 {
                   "atomType": "Extrude",
-                  "x": 0.4697950377562028,
-                  "y": 0.9099307159353348,
+                  "x": 0.5711974110032362,
+                  "y": 0.8799076212471131,
                   "uniqueID": "id-5389",
                   "ioValues": [
                     {
@@ -3473,8 +3457,8 @@
                 },
                 {
                   "atomType": "Tag",
-                  "x": 0.830636461704423,
-                  "y": 0.3140877598152425,
+                  "x": 0.8516720604099244,
+                  "y": 0.42494226327944573,
                   "uniqueID": "id-6426",
                   "name": "RotorLayerTop",
                   "ioValues": [
@@ -3488,36 +3472,23 @@
                   ]
                 },
                 {
-                  "atomType": "Tag",
-                  "x": 0.9282632146709816,
-                  "y": 0.46420323325635104,
-                  "uniqueID": "id-6429",
-                  "name": "RotorLayer",
-                  "ioValues": [
-                    {
-                      "name": "geometry",
-                      "ioValue": "__GEOMETRY_INPUT__"
-                    }
-                  ],
-                  "tags": [
-                    "RotorLayer"
-                  ]
-                },
-                {
                   "atomType": "Equation",
-                  "x": 0.37648327939590076,
-                  "y": 0.9607390300230947,
+                  "x": 0.4217907227615965,
+                  "y": 0.7759815242494226,
                   "uniqueID": "id-6432",
                   "name": "WaterHeight/2",
                   "currentEquation": "WaterHeight/2"
+                },
+                {
+                  "atomType": "Equation",
+                  "x": 0.08683926645091693,
+                  "y": 0.9584295612009238,
+                  "uniqueID": "id-6441",
+                  "name": "2* CoverCurve",
+                  "currentEquation": "2* CoverCurve"
                 }
               ],
               "allConnectors": [
-                {
-                  "ap2Name": "Shape 1",
-                  "ap1ID": "id-5192",
-                  "ap2ID": "id-5234"
-                },
                 {
                   "ap2Name": "retain",
                   "ap1ID": "id-5192",
@@ -3544,9 +3515,19 @@
                   "ap2ID": "id-5377"
                 },
                 {
+                  "ap2Name": "xDist",
+                  "ap1ID": "id-5216",
+                  "ap2ID": "id-5338"
+                },
+                {
                   "ap2Name": "yDist",
                   "ap1ID": "id-5219",
                   "ap2ID": "id-5244"
+                },
+                {
+                  "ap2Name": "yDist",
+                  "ap1ID": "id-5219",
+                  "ap2ID": "id-5338"
                 },
                 {
                   "ap2Name": "x length",
@@ -3562,11 +3543,6 @@
                   "ap2Name": "y length",
                   "ap1ID": "id-5231",
                   "ap2ID": "id-6400"
-                },
-                {
-                  "ap2Name": "geometry",
-                  "ap1ID": "id-5234",
-                  "ap2ID": "id-6429"
                 },
                 {
                   "ap2Name": "geometry",
@@ -3758,20 +3734,21 @@
                   "ap1ID": "id-6420",
                   "ap2ID": "id-5256"
                 },
-                {
-                  "ap2Name": "Shape 2",
-                  "ap1ID": "id-6426",
-                  "ap2ID": "id-5234"
-                },
-                {
-                  "ap2Name": "number or geometry",
-                  "ap1ID": "id-6429",
-                  "ap2ID": "id-1234"
-                },
+                null,
                 {
                   "ap2Name": "yDist",
                   "ap1ID": "id-6432",
                   "ap2ID": "id-5377"
+                },
+                {
+                  "ap2Name": "diameter",
+                  "ap1ID": "id-6441",
+                  "ap2ID": "id-5301"
+                },
+                {
+                  "ap2Name": "x length",
+                  "ap1ID": "id-6441",
+                  "ap2ID": "id-5351"
                 }
               ],
               "fileTypeVersion": 1
