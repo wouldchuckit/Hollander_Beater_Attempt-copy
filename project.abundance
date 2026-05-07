@@ -1176,6 +1176,10 @@
           "name": "NutThick",
           "ioValue": 5,
           "currentEquation": "NutThick"
+        },
+        {
+          "name": "Input",
+          "ioValue": 10
         }
       ],
       "topLevel": false,
@@ -1202,119 +1206,119 @@
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.371824480369515,
+          "y": 0.3348729792147806,
           "uniqueID": "id-777",
           "name": "AxleDiameter"
         },
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.39953810623556585,
+          "y": 0.39260969976905313,
           "uniqueID": "id-780",
           "name": "HingeAxleDiameter"
         },
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.3510392609699769,
+          "y": 0.7297921478060047,
           "uniqueID": "id-783",
           "name": "RotorRadius"
         },
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.3879907621247113,
+          "y": 0.7182448036951501,
           "uniqueID": "id-786",
           "name": "UpSlope"
         },
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.4665127020785219,
+          "y": 0.7944572748267898,
           "uniqueID": "id-789",
           "name": "DownSlope"
         },
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.8221709006928407,
+          "y": 0.7759815242494226,
           "uniqueID": "id-792",
           "name": "TopSlope"
         },
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.8290993071593533,
+          "y": 0.789838337182448,
           "uniqueID": "id-795",
           "name": "CoverCurve"
         },
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.5935334872979214,
+          "y": 0.766743648960739,
           "uniqueID": "id-798",
           "name": "ToothStock"
         },
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.6166281755196305,
+          "y": 0.766743648960739,
           "uniqueID": "id-801",
           "name": "ToothHeight"
         },
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.4665127020785219,
+          "y": 0.7090069284064665,
           "uniqueID": "id-804",
           "name": "ToothThick"
         },
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.4919168591224019,
+          "y": 0.7713625866050808,
           "uniqueID": "id-807",
           "name": "TopThick"
         },
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.41570438799076215,
+          "y": 0.6836027713625865,
           "uniqueID": "id-810",
           "name": "BedPlateWidth"
         },
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.4849884526558892,
+          "y": 0.7829099307159354,
           "uniqueID": "id-813",
           "name": "BaseHeight"
         },
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.9260969976905312,
+          "y": 0.5057736720554272,
           "uniqueID": "id-816",
           "name": "AxleX"
         },
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.5173210161662818,
+          "y": 0.44803695150115475,
           "uniqueID": "id-819",
           "name": "AxleY"
         },
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.8660508083140878,
+          "y": 0.5635103926096998,
           "uniqueID": "id-822",
           "name": "MachineLength"
         },
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.8060046189376444,
+          "y": 0.605080831408776,
           "uniqueID": "id-825",
           "name": "MachineHeight"
         },
@@ -1336,7 +1340,7 @@
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.7736720554272518,
+          "y": 0.7020785219399538,
           "uniqueID": "id-1074",
           "name": "LiftingBolt",
           "type": "geometry"
@@ -1344,14 +1348,14 @@
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.7390300230946882,
+          "y": 0.6743648960739029,
           "uniqueID": "id-1244",
           "name": "Clearance"
         },
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.74364896073903,
+          "y": 0.6836027713625865,
           "uniqueID": "id-2123",
           "name": "NumTeeth"
         },
@@ -7754,14 +7758,14 @@
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.7551963048498845,
+          "y": 0.7806004618937644,
           "uniqueID": "id-6475",
           "name": "LiftingBoltDiameter"
         },
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.5612009237875288,
+          "y": 0.7528868360277136,
           "uniqueID": "id-6481",
           "name": "NutDiameter"
         },
@@ -9180,7 +9184,7 @@
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.95,
+          "y": 0.74364896073903,
           "uniqueID": "id-6591",
           "name": "NutThick"
         },
@@ -9231,6 +9235,12 @@
           ],
           "allConnectors": [],
           "fileTypeVersion": 1
+        },
+        {
+          "atomType": "Input",
+          "x": 0.0165,
+          "y": 0.8960739030023095,
+          "uniqueID": "id-6824"
         }
       ],
       "allConnectors": [
