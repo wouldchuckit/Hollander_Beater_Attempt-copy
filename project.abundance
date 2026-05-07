@@ -551,8 +551,8 @@
             },
             {
               "name": "yDist",
-              "ioValue": 20,
-              "currentEquation": "PillowBlockHeight/2"
+              "ioValue": 0,
+              "currentEquation": "0"
             },
             {
               "name": "zDist",
@@ -572,7 +572,8 @@
             },
             {
               "name": "x-axis degrees",
-              "ioValue": 90
+              "ioValue": 0,
+              "currentEquation": "0"
             },
             {
               "name": "y-axis degrees",
@@ -9475,13 +9476,13 @@
             },
             {
               "atomType": "Rectangle",
-              "x": 0.41585760517799353,
-              "y": 0.8175519630484989,
+              "x": 0.5388349514563107,
+              "y": 0.8983833718244804,
               "uniqueID": "id-6889",
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 10
+                  "ioValue": 45
                 },
                 {
                   "name": "y length",
@@ -9491,14 +9492,92 @@
             },
             {
               "atomType": "Equation",
-              "x": 0.3300970873786408,
-              "y": 0.7782909930715934,
+              "x": 0.43905070118662354,
+              "y": 0.9053117782909931,
               "uniqueID": "id-6893",
               "name": "3 * HingeAxleDiameter",
               "currentEquation": "3 * HingeAxleDiameter"
+            },
+            {
+              "atomType": "Move",
+              "x": 0.20010787486515644,
+              "y": 0.8868360277136258,
+              "uniqueID": "id-6897",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "xDist",
+                  "ioValue": 380
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": 210
+                },
+                {
+                  "name": "zDist",
+                  "ioValue": 0
+                }
+              ]
+            },
+            {
+              "atomType": "Assembly",
+              "x": 0.4147788565264293,
+              "y": 0.3002309468822171,
+              "uniqueID": "id-6907",
+              "ioValues": []
+            },
+            {
+              "atomType": "Difference",
+              "x": 0.47572815533980584,
+              "y": 0.30484988452655887,
+              "uniqueID": "id-6910",
+              "ioValues": [
+                {
+                  "name": "retain",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "remove",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Extrude",
+              "x": 0.3478964401294498,
+              "y": 0.27020785219399535,
+              "uniqueID": "id-6914",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "height",
+                  "ioValue": 10
+                }
+              ]
             }
           ],
           "allConnectors": [
+            {
+              "ap2Name": "height",
+              "ap1ID": "id-6827",
+              "ap2ID": "id-6914"
+            },
+            {
+              "ap2Name": "xDist",
+              "ap1ID": "id-6836",
+              "ap2ID": "id-6897"
+            },
+            {
+              "ap2Name": "yDist",
+              "ap1ID": "id-6839",
+              "ap2ID": "id-6897"
+            },
             {
               "ap2Name": "x length",
               "ap1ID": "id-6842",
@@ -9508,6 +9587,11 @@
               "ap2Name": "x",
               "ap1ID": "id-6842",
               "ap2ID": "id-6875"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-6848",
+              "ap2ID": "id-6897"
             },
             {
               "ap2Name": "y length",
@@ -9555,7 +9639,17 @@
               "ap2ID": "id-6883"
             },
             {
+              "ap2Name": "geometry",
+              "ap1ID": "id-6883",
+              "ap2ID": "id-6914"
+            },
+            {
               "ap2Name": "y length",
+              "ap1ID": "id-6893",
+              "ap2ID": "id-6889"
+            },
+            {
+              "ap2Name": "x length",
               "ap1ID": "id-6893",
               "ap2ID": "id-6889"
             }
