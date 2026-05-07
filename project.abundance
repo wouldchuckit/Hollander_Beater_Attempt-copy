@@ -7974,7 +7974,7 @@
             {
               "atomType": "Input",
               "x": 0.0165,
-              "y": 0.8200000000000003,
+              "y": 0.8221709006928407,
               "uniqueID": "id-6537",
               "name": "LiftingBolt",
               "type": "geometry"
@@ -8020,7 +8020,7 @@
             {
               "atomType": "Assembly",
               "x": 0.7691477885652643,
-              "y": 0.3879907621247113,
+              "y": 0.23556581986143188,
               "uniqueID": "id-6552",
               "ioValues": [
                 {
@@ -8112,8 +8112,8 @@
             },
             {
               "atomType": "Equation",
-              "x": 0.5879180151024811,
-              "y": 0.7967667436489608,
+              "x": 0.5366774541531824,
+              "y": 0.833718244803695,
               "uniqueID": "id-6578",
               "name": "MachineHeight - AxleY - TopThick -2*NutThick + Gap",
               "currentEquation": "MachineHeight - AxleY - TopThick -2*NutThick + Gap"
@@ -8512,8 +8512,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.5032362459546926,
-              "y": 0.9053117782909931,
+              "x": 0.7599784250269688,
+              "y": 0.8013856812933026,
               "uniqueID": "id-6722",
               "ioValues": [
                 {
@@ -8550,8 +8550,8 @@
             },
             {
               "atomType": "Difference",
-              "x": 0.8565264293419633,
-              "y": 0.7367205542725173,
+              "x": 0.8176914778856527,
+              "y": 0.789838337182448,
               "uniqueID": "id-6733",
               "ioValues": [
                 {
@@ -8566,8 +8566,8 @@
             },
             {
               "atomType": "Circle",
-              "x": 0.8020496224379718,
-              "y": 0.9145496535796767,
+              "x": 0.7588996763754046,
+              "y": 0.9330254041570438,
               "uniqueID": "id-6737",
               "ioValues": [
                 {
@@ -8578,8 +8578,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.8554476806903991,
-              "y": 0.8568129330254042,
+              "x": 0.8214670981661273,
+              "y": 0.9237875288683602,
               "uniqueID": "id-6740",
               "ioValues": [
                 {
@@ -8602,15 +8602,15 @@
             },
             {
               "atomType": "Equation",
-              "x": 0.5852211434735707,
-              "y": 0.9076212471131639,
+              "x": 0.529126213592233,
+              "y": 0.9376443418013856,
               "uniqueID": "id-6746",
               "name": "MachineLength - 1.5 * HingeAxleDiameter - 3 *NutDiameter",
               "currentEquation": "MachineLength - 1.5 * HingeAxleDiameter - 3 *NutDiameter"
             },
             {
               "atomType": "Equation",
-              "x": 0.7486515641855448,
+              "x": 0.6882416396979504,
               "y": 0.8568129330254042,
               "uniqueID": "id-6750",
               "name": "2* sqrt(x^2 + y^2)",
@@ -8644,8 +8644,8 @@
             },
             {
               "atomType": "Extrude",
-              "x": 0.9115426105717368,
-              "y": 0.745958429561201,
+              "x": 0.8683926645091693,
+              "y": 0.8545034642032332,
               "uniqueID": "id-6763",
               "ioValues": [
                 {
@@ -8716,8 +8716,8 @@
             },
             {
               "atomType": "Difference",
-              "x": 0.8667745415318231,
-              "y": 0.3302540415704388,
+              "x": 0.8683926645091693,
+              "y": 0.25635103926096997,
               "uniqueID": "id-6787",
               "ioValues": [
                 {
@@ -8727,6 +8727,30 @@
                 {
                   "name": "remove",
                   "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Move",
+              "x": 0.7588996763754046,
+              "y": 0.45958429561200925,
+              "uniqueID": "id-6791",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "xDist",
+                  "ioValue": 0
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": 0
+                },
+                {
+                  "name": "zDist",
+                  "ioValue": 0
                 }
               ]
             }
@@ -9095,6 +9119,11 @@
       ],
       "allConnectors": [
         {
+          "ap2Name": "LiftingBolt",
+          "ap1ID": "id-1074",
+          "ap2ID": "id-6497"
+        },
+        {
           "ap2Name": "MachineBlock",
           "ap1ID": "id-981",
           "ap2ID": "id-1147"
@@ -9108,11 +9137,6 @@
           "ap2Name": "Shape 1",
           "ap1ID": "id-1147",
           "ap2ID": "id-6493"
-        },
-        {
-          "ap2Name": "LiftingBolt",
-          "ap1ID": "id-6475",
-          "ap2ID": "id-6497"
         },
         {
           "ap2Name": "number or geometry",
