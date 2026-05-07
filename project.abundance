@@ -8358,8 +8358,8 @@
             },
             {
               "atomType": "Circle",
-              "x": 0.3193096008629989,
-              "y": 0.7159353348729792,
+              "x": 0.3220064724919094,
+              "y": 0.7066974595842955,
               "uniqueID": "id-6670",
               "ioValues": [
                 {
@@ -8370,8 +8370,8 @@
             },
             {
               "atomType": "Circle",
-              "x": 0.3155339805825243,
-              "y": 0.8545034642032332,
+              "x": 0.3220064724919094,
+              "y": 0.8452655889145496,
               "uniqueID": "id-6673",
               "ioValues": [
                 {
@@ -8379,6 +8379,42 @@
                   "ioValue": 10
                 }
               ]
+            },
+            {
+              "atomType": "Equation",
+              "x": 0.2626752966558792,
+              "y": 0.7136258660508084,
+              "uniqueID": "id-6676",
+              "name": "x + y",
+              "ioValues": [
+                {
+                  "name": "x",
+                  "ioValue": 1
+                },
+                {
+                  "name": "y",
+                  "ioValue": 1
+                }
+              ],
+              "currentEquation": "x + y"
+            },
+            {
+              "atomType": "Equation",
+              "x": 0.2680690399137001,
+              "y": 0.8614318706697459,
+              "uniqueID": "id-6680",
+              "name": "x + y",
+              "ioValues": [
+                {
+                  "name": "x",
+                  "ioValue": 1
+                },
+                {
+                  "name": "y",
+                  "ioValue": 1
+                }
+              ],
+              "currentEquation": "x + y"
             }
           ],
           "allConnectors": [
