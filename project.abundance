@@ -7759,6 +7759,18 @@
           "y": 0.95,
           "uniqueID": "id-6481",
           "name": "NutDiameter"
+        },
+        {
+          "atomType": "Assembly",
+          "x": 0.8403451995685005,
+          "y": 0.5404157043879907,
+          "uniqueID": "id-6493",
+          "ioValues": [
+            {
+              "name": "Shape 1",
+              "ioValue": null
+            }
+          ]
         }
       ],
       "allConnectors": [
@@ -7768,8 +7780,13 @@
           "ap2ID": "id-1147"
         },
         {
-          "ap2Name": "number or geometry",
+          "ap2Name": "Shape 1",
           "ap1ID": "id-1147",
+          "ap2ID": "id-6493"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-6493",
           "ap2ID": "id-772"
         }
       ],
