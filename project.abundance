@@ -1867,6 +1867,10 @@
               "name": "WaterHeight",
               "ioValue": 200,
               "currentEquation": "WaterHeight"
+            },
+            {
+              "name": "LiftingBoltDiameter",
+              "ioValue": 10
             }
           ],
           "topLevel": false,
@@ -2254,8 +2258,8 @@
                 },
                 {
                   "atomType": "Rotate",
-                  "x": 0.33603020496224384,
-                  "y": 0.22863741339491916,
+                  "x": 0.38187702265372164,
+                  "y": 0.17551963048498845,
                   "uniqueID": "id-4237",
                   "ioValues": [
                     {
@@ -2321,8 +2325,8 @@
                 },
                 {
                   "atomType": "Rotate",
-                  "x": 0.2858683926645092,
-                  "y": 0.34411085450346424,
+                  "x": 0.28371089536138083,
+                  "y": 0.4064665127020785,
                   "uniqueID": "id-4261",
                   "ioValues": [
                     {
@@ -2369,17 +2373,13 @@
                 },
                 {
                   "atomType": "Move",
-                  "x": 0.21574973031283712,
-                  "y": 0.22401847575057737,
+                  "x": 0.2189859762675297,
+                  "y": 0.35334872979214776,
                   "uniqueID": "id-4273",
                   "ioValues": [
                     {
                       "name": "geometry",
                       "ioValue": "__GEOMETRY_INPUT__"
-                    },
-                    {
-                      "name": "xDist",
-                      "ioValue": -170
                     },
                     {
                       "name": "yDist",
@@ -2433,8 +2433,8 @@
                 },
                 {
                   "atomType": "Rectangle",
-                  "x": 0.4649406688241639,
-                  "y": 0.8799076212471131,
+                  "x": 0.46332254584681765,
+                  "y": 0.8822170900692841,
                   "uniqueID": "id-4290",
                   "ioValues": [
                     {
@@ -2571,8 +2571,8 @@
                 },
                 {
                   "atomType": "Equation",
-                  "x": 0.21682847896440127,
-                  "y": 0.35334872979214776,
+                  "x": 0.21790722761596548,
+                  "y": 0.48036951501154734,
                   "uniqueID": "id-6459",
                   "name": "- T",
                   "ioValues": [
@@ -2585,11 +2585,11 @@
                 },
                 {
                   "atomType": "Equation",
-                  "x": 0.14401294498381878,
-                  "y": 0.19630484988452657,
+                  "x": 0.13915857605177992,
+                  "y": 0.348729792147806,
                   "uniqueID": "id-6464",
-                  "name": "-RotorRadius",
-                  "currentEquation": "-RotorRadius"
+                  "name": "-RotorRadius -",
+                  "currentEquation": "-RotorRadius -"
                 },
                 {
                   "atomType": "Equation",
@@ -7632,6 +7632,13 @@
               "tags": [
                 "RotorLayer"
               ]
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0165,
+              "y": 0.95,
+              "uniqueID": "id-6472",
+              "name": "LiftingBoltDiameter"
             }
           ],
           "allConnectors": [

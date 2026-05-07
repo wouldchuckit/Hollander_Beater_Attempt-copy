@@ -48,11 +48,7 @@ I intend to drill holes through the rotor and teeth when it is all assembled for
 
 
 
-There should be teeth set into the bottom or curve of the bottom section.  All of the hollander wisdom suggets they should be at an angle across the bottom so I will perhaps cut those later by hand.  
-
-![readme](/readmeid-5188.svg?v=na8oe9c)
-
-
+There should be teeth set into the bottom or curve of the bottom section.  All of the hollander wisdom suggets they should be at an angle across the bottom so I will perhaps cut those later by hand. 
 
 
 
