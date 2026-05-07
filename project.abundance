@@ -1365,8 +1365,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.1208198489751888,
-          "y": 0.22863741339491916,
+          "x": 0.12459546925566342,
+          "y": 0.5427251732101617,
           "uniqueID": "id-981",
           "name": "MachineBlock",
           "ioValues": [
@@ -1770,8 +1770,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.37216828478964403,
-          "y": 0.21478060046189376,
+          "x": 0.296655879180151,
+          "y": 0.33718244803695147,
           "uniqueID": "id-1147",
           "name": "RotorLayer",
           "ioValues": [
@@ -7768,8 +7768,8 @@
         },
         {
           "atomType": "Assembly",
-          "x": 0.8414239482200647,
-          "y": 0.4942263279445727,
+          "x": 0.8511326860841424,
+          "y": 0.4780600461893765,
           "uniqueID": "id-6493",
           "ioValues": [
             {
@@ -7779,13 +7779,17 @@
             {
               "name": "Shape 2",
               "ioValue": null
+            },
+            {
+              "name": "Shape 3",
+              "ioValue": null
             }
           ]
         },
         {
           "atomType": "Molecule",
-          "x": 0.38781014023732474,
-          "y": 0.584295612009238,
+          "x": 0.41909385113268605,
+          "y": 0.605080831408776,
           "uniqueID": "id-6497",
           "name": "LiftingLayer",
           "ioValues": [
@@ -9187,8 +9191,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.5064724919093851,
-          "y": 0.45265588914549654,
+          "x": 0.5560949298813377,
+          "y": 0.30946882217090066,
           "uniqueID": "id-6813",
           "ioValues": [
             {
@@ -9211,8 +9215,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.5539374325782093,
-          "y": 0.8198614318706698,
+          "x": 0.5296655879180151,
+          "y": 0.836027713625866,
           "uniqueID": "id-6820",
           "name": "AxleSupportLayer",
           "ioValues": [
@@ -9360,6 +9364,7 @@
               "x": 0.9271844660194175,
               "y": 0.4942263279445727,
               "uniqueID": "id-6857",
+              "name": "AxleSupportLayer",
               "ioValues": [
                 {
                   "name": "geometry",
@@ -9367,7 +9372,7 @@
                 }
               ],
               "tags": [
-                ""
+                "AxleSupportLayer"
               ]
             },
             {
@@ -9500,8 +9505,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.3743257820927724,
-              "y": 0.7136258660508084,
+              "x": 0.21305285868392665,
+              "y": 0.8429561200923789,
               "uniqueID": "id-6897",
               "ioValues": [
                 {
@@ -9762,6 +9767,38 @@
             }
           ],
           "fileTypeVersion": 1
+        },
+        {
+          "atomType": "Move",
+          "x": 0.703344120819849,
+          "y": 0.8221709006928407,
+          "uniqueID": "id-6934",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 0
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 20
+            }
+          ]
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.6127292340884574,
+          "y": 0.6189376443418013,
+          "uniqueID": "id-6940",
+          "name": "2* WoodThick",
+          "currentEquation": "2* WoodThick"
         }
       ],
       "allConnectors": [
@@ -9814,6 +9851,21 @@
           "ap2Name": "Shape 2",
           "ap1ID": "id-6813",
           "ap2ID": "id-6493"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-6820",
+          "ap2ID": "id-6934"
+        },
+        {
+          "ap2Name": "Shape 3",
+          "ap1ID": "id-6934",
+          "ap2ID": "id-6493"
+        },
+        {
+          "ap2Name": "zDist",
+          "ap1ID": "id-6940",
+          "ap2ID": "id-6934"
         }
       ],
       "fileTypeVersion": 1
