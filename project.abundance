@@ -7988,8 +7988,8 @@
             },
             {
               "atomType": "Tag",
-              "x": 0.919093851132686,
-              "y": 0.4919168591224019,
+              "x": 0.9115426105717368,
+              "y": 0.48036951501154734,
               "uniqueID": "id-6549",
               "name": "LiftingLayer",
               "ioValues": [
@@ -8004,13 +8004,23 @@
             },
             {
               "atomType": "Assembly",
-              "x": 0.8581445523193095,
-              "y": 0.4849884526558892,
+              "x": 0.8516720604099244,
+              "y": 0.48036951501154734,
               "uniqueID": "id-6552",
-              "ioValues": []
+              "ioValues": [
+                {
+                  "name": "Shape 1",
+                  "ioValue": null
+                }
+              ]
             }
           ],
           "allConnectors": [
+            {
+              "ap2Name": "Shape 1",
+              "ap1ID": "id-6546",
+              "ap2ID": "id-6552"
+            },
             {
               "ap2Name": "number or geometry",
               "ap1ID": "id-6549",
@@ -8030,6 +8040,11 @@
           "ap2Name": "MachineBlock",
           "ap1ID": "id-981",
           "ap2ID": "id-1147"
+        },
+        {
+          "ap2Name": "MachineBlock",
+          "ap1ID": "id-981",
+          "ap2ID": "id-6497"
         },
         {
           "ap2Name": "Shape 1",
