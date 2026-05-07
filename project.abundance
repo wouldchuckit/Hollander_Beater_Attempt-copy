@@ -1161,6 +1161,11 @@
           "name": "WaterHeight",
           "ioValue": 200,
           "currentEquation": "WaterHeight"
+        },
+        {
+          "name": "LiftingBoltDiameter",
+          "ioValue": 5,
+          "currentEquation": "LiftingBoltDiameter"
         }
       ],
       "topLevel": false,
@@ -1349,8 +1354,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.1353829557713053,
-          "y": 0.3002309468822171,
+          "x": 0.1111111111111111,
+          "y": 0.18937644341801385,
           "uniqueID": "id-981",
           "name": "MachineBlock",
           "ioValues": [
@@ -1754,8 +1759,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.2243797195253506,
-          "y": 0.4549653579676674,
+          "x": 0.23085221143473572,
+          "y": 0.4988452655889145,
           "uniqueID": "id-1147",
           "name": "RotorLayer",
           "ioValues": [
@@ -1870,7 +1875,8 @@
             },
             {
               "name": "LiftingBoltDiameter",
-              "ioValue": 10
+              "ioValue": 5,
+              "currentEquation": "LiftingBoltDiameter"
             }
           ],
           "topLevel": false,
@@ -2044,8 +2050,8 @@
             },
             {
               "atomType": "Assembly",
-              "x": 0.7448759439050701,
-              "y": 0.5288683602771362,
+              "x": 0.7464940668824164,
+              "y": 0.5034642032332564,
               "uniqueID": "id-5183",
               "ioValues": [
                 {
@@ -7694,6 +7700,13 @@
             }
           ],
           "fileTypeVersion": 1
+        },
+        {
+          "atomType": "Input",
+          "x": 0.0165,
+          "y": 0.95,
+          "uniqueID": "id-6475",
+          "name": "LiftingBoltDiameter"
         }
       ],
       "allConnectors": [
