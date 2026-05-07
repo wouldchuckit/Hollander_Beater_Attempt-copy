@@ -8385,18 +8385,8 @@
               "x": 0.2626752966558792,
               "y": 0.7136258660508084,
               "uniqueID": "id-6676",
-              "name": "x + y",
-              "ioValues": [
-                {
-                  "name": "x",
-                  "ioValue": 1
-                },
-                {
-                  "name": "y",
-                  "ioValue": 1
-                }
-              ],
-              "currentEquation": "x + y"
+              "name": "2* AxleX + .5 * AxleDiameter",
+              "currentEquation": "2* AxleX + .5 * AxleDiameter"
             },
             {
               "atomType": "Equation",
