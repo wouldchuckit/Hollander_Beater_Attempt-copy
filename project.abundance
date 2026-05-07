@@ -8732,8 +8732,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.7588996763754046,
-              "y": 0.45958429561200925,
+              "x": 0.8300970873786407,
+              "y": 0.47344110854503463,
               "uniqueID": "id-6791",
               "ioValues": [
                 {
@@ -8753,6 +8753,38 @@
                   "ioValue": 0
                 }
               ]
+            },
+            {
+              "atomType": "Move",
+              "x": 0.7330097087378641,
+              "y": 0.3972286374133949,
+              "uniqueID": "id-6797",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "xDist",
+                  "ioValue": 430
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": 560
+                },
+                {
+                  "name": "zDist",
+                  "ioValue": 0
+                }
+              ]
+            },
+            {
+              "atomType": "Equation",
+              "x": 0.6779935275080906,
+              "y": 0.4503464203233256,
+              "uniqueID": "id-6803",
+              "name": "MachineLength - 2 * NutDiameter",
+              "currentEquation": "MachineLength - 2 * NutDiameter"
             }
           ],
           "allConnectors": [
@@ -8825,6 +8857,16 @@
               "ap2Name": "xDist",
               "ap1ID": "id-6528",
               "ap2ID": "id-6722"
+            },
+            {
+              "ap2Name": "xDist",
+              "ap1ID": "id-6531",
+              "ap2ID": "id-6797"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-6537",
+              "ap2ID": "id-6797"
             },
             {
               "ap2Name": "geometry",
@@ -9105,6 +9147,11 @@
               "ap2Name": "Shape 2",
               "ap1ID": "id-6782",
               "ap2ID": "id-6552"
+            },
+            {
+              "ap2Name": "yDist",
+              "ap1ID": "id-6803",
+              "ap2ID": "id-6797"
             }
           ],
           "fileTypeVersion": 1
