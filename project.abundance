@@ -8130,21 +8130,11 @@
             },
             {
               "atomType": "Equation",
-              "x": 0.18770226537216828,
-              "y": 0.4549653579676674,
-              "uniqueID": "id-6594",
-              "name": "x + y",
-              "ioValues": [
-                {
-                  "name": "x",
-                  "ioValue": 1
-                },
-                {
-                  "name": "y",
-                  "ioValue": 1
-                }
-              ],
-              "currentEquation": "x + y"
+              "x": 0.0895361380798274,
+              "y": 0.4457274826789838,
+              "uniqueID": "id-6598",
+              "name": "atan(1.5*HingeAxleDiameter/(.5*MachineHeight - AxleY))* 180/pi",
+              "currentEquation": "atan(1.5*HingeAxleDiameter/(.5*MachineHeight - AxleY))* 180/pi"
             }
           ],
           "allConnectors": [
