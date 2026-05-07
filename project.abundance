@@ -8016,22 +8016,54 @@
             },
             {
               "atomType": "Rectangle",
-              "x": 0.22384034519956852,
-              "y": 0.3279445727482679,
+              "x": 0.20496224379719524,
+              "y": 0.279445727482679,
               "uniqueID": "id-6556",
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 10
+                  "ioValue": 580
                 },
                 {
                   "name": "y length",
-                  "ioValue": 10
+                  "ioValue": 30
                 }
               ]
+            },
+            {
+              "atomType": "Equation",
+              "x": 0.11488673139158576,
+              "y": 0.26558891454965355,
+              "uniqueID": "id-6560",
+              "name": "TopThick - Gap",
+              "currentEquation": "TopThick - Gap"
+            },
+            {
+              "atomType": "Equation",
+              "x": 0.1866235167206041,
+              "y": 0.584295612009238,
+              "uniqueID": "id-6564",
+              "name": "x + y",
+              "ioValues": [
+                {
+                  "name": "x",
+                  "ioValue": 1,
+                  "currentEquation": "1"
+                },
+                {
+                  "name": "y",
+                  "ioValue": 1
+                }
+              ],
+              "currentEquation": "x + y"
             }
           ],
           "allConnectors": [
+            {
+              "ap2Name": "x length",
+              "ap1ID": "id-6528",
+              "ap2ID": "id-6556"
+            },
             {
               "ap2Name": "Shape 1",
               "ap1ID": "id-6546",
@@ -8046,6 +8078,11 @@
               "ap2Name": "geometry",
               "ap1ID": "id-6552",
               "ap2ID": "id-6549"
+            },
+            {
+              "ap2Name": "y length",
+              "ap1ID": "id-6560",
+              "ap2ID": "id-6556"
             }
           ],
           "fileTypeVersion": 1
