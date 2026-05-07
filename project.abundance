@@ -8031,8 +8031,8 @@
             },
             {
               "atomType": "Rectangle",
-              "x": 0.18392664509169365,
-              "y": 0.20554272517321018,
+              "x": 0.2928802588996764,
+              "y": 0.16859122401847573,
               "uniqueID": "id-6556",
               "ioValues": [
                 {
@@ -8084,8 +8084,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.24379719525350593,
-              "y": 0.2517321016166282,
+              "x": 0.39104638619201726,
+              "y": 0.17782909930715934,
               "uniqueID": "id-6572",
               "ioValues": [
                 {
@@ -8133,8 +8133,8 @@
               "x": 0.0895361380798274,
               "y": 0.4457274826789838,
               "uniqueID": "id-6598",
-              "name": "atan(1.5*HingeAxleDiameter/(.5*MachineHeight - AxleY))* 180/pi",
-              "currentEquation": "atan(1.5*HingeAxleDiameter/(.5*MachineHeight - AxleY))* 180/pi"
+              "name": "90 -atan(1.5*HingeAxleDiameter/(.5*(MachineHeight - AxleY)))* 180/pi",
+              "currentEquation": "90 -atan(1.5*HingeAxleDiameter/(.5*(MachineHeight - AxleY)))* 180/pi"
             },
             {
               "atomType": "Equation",
@@ -8212,7 +8212,7 @@
                 },
                 {
                   "name": "z-axis degrees",
-                  "ioValue": 77.47119229084849
+                  "ioValue": 78.43986920578223
                 }
               ]
             },
@@ -8250,8 +8250,8 @@
             },
             {
               "atomType": "Difference",
-              "x": 0.4077669902912621,
-              "y": 0.5103926096997691,
+              "x": 0.4083063646170442,
+              "y": 0.5127020785219399,
               "uniqueID": "id-6641",
               "ioValues": [
                 {
