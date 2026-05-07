@@ -1176,10 +1176,6 @@
           "name": "NutThick",
           "ioValue": 5,
           "currentEquation": "NutThick"
-        },
-        {
-          "name": "Input",
-          "ioValue": 10
         }
       ],
       "topLevel": false,
@@ -1311,7 +1307,7 @@
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.5635103926096998,
+          "y": 0.5519630484988453,
           "uniqueID": "id-822",
           "name": "MachineLength"
         },
@@ -1362,7 +1358,7 @@
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.21939953810623555,
+          "y": 0.20785219399538107,
           "uniqueID": "id-5175",
           "name": "WaterHeight"
         },
@@ -9214,10 +9210,56 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.552319309600863,
-          "y": 0.7990762124711317,
+          "x": 0.5539374325782093,
+          "y": 0.8198614318706698,
           "uniqueID": "id-6820",
           "name": "AxleSupportLayer",
+          "ioValues": [
+            {
+              "name": "WoodThick",
+              "ioValue": 10
+            },
+            {
+              "name": "AxleDiameter",
+              "ioValue": 10
+            },
+            {
+              "name": "HingeAxleDiameter",
+              "ioValue": 10
+            },
+            {
+              "name": "AxleX",
+              "ioValue": 10
+            },
+            {
+              "name": "AxleY",
+              "ioValue": 10
+            },
+            {
+              "name": "MachineLength",
+              "ioValue": 10
+            },
+            {
+              "name": "MachineHeight",
+              "ioValue": 10
+            },
+            {
+              "name": "PillowBlock",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Gap",
+              "ioValue": 10
+            },
+            {
+              "name": "WaterHeight",
+              "ioValue": 10
+            },
+            {
+              "name": "MachineBlock",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
           "topLevel": false,
           "allAtoms": [
             {
@@ -9231,16 +9273,153 @@
                   "ioValue": "__GEOMETRY_INPUT__"
                 }
               ]
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0165,
+              "y": 0.1,
+              "uniqueID": "id-6827",
+              "name": "WoodThick"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0165,
+              "y": 0.16,
+              "uniqueID": "id-6830",
+              "name": "AxleDiameter"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0165,
+              "y": 0.22,
+              "uniqueID": "id-6833",
+              "name": "HingeAxleDiameter"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0165,
+              "y": 0.28,
+              "uniqueID": "id-6836",
+              "name": "AxleX"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0165,
+              "y": 0.34,
+              "uniqueID": "id-6839",
+              "name": "AxleY"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0165,
+              "y": 0.4,
+              "uniqueID": "id-6842",
+              "name": "MachineLength"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0165,
+              "y": 0.46,
+              "uniqueID": "id-6845",
+              "name": "MachineHeight"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0165,
+              "y": 0.52,
+              "uniqueID": "id-6848",
+              "name": "PillowBlock",
+              "type": "geometry"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0165,
+              "y": 0.5800000000000001,
+              "uniqueID": "id-6851",
+              "name": "Gap"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0165,
+              "y": 0.6400000000000001,
+              "uniqueID": "id-6854",
+              "name": "WaterHeight"
+            },
+            {
+              "atomType": "Tag",
+              "x": 0.9271844660194175,
+              "y": 0.4942263279445727,
+              "uniqueID": "id-6857",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "tags": [
+                ""
+              ]
+            },
+            {
+              "atomType": "Assembly",
+              "x": 0.8694714131607336,
+              "y": 0.48729792147806006,
+              "uniqueID": "id-6860",
+              "ioValues": [
+                {
+                  "name": "Shape 1",
+                  "ioValue": null
+                }
+              ]
+            },
+            {
+              "atomType": "Difference",
+              "x": 0.7804746494066883,
+              "y": 0.34180138568129326,
+              "uniqueID": "id-6863",
+              "ioValues": [
+                {
+                  "name": "retain",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "remove",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0165,
+              "y": 0.7000000000000002,
+              "uniqueID": "id-6867",
+              "name": "MachineBlock",
+              "type": "geometry"
             }
           ],
-          "allConnectors": [],
+          "allConnectors": [
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-6857",
+              "ap2ID": "id-6822"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-6860",
+              "ap2ID": "id-6857"
+            },
+            {
+              "ap2Name": "retain",
+              "ap1ID": "id-6867",
+              "ap2ID": "id-6863"
+            },
+            {
+              "ap2Name": "Shape 1",
+              "ap1ID": "id-6867",
+              "ap2ID": "id-6860"
+            }
+          ],
           "fileTypeVersion": 1
-        },
-        {
-          "atomType": "Input",
-          "x": 0.0165,
-          "y": 0.8960739030023095,
-          "uniqueID": "id-6824"
         }
       ],
       "allConnectors": [
@@ -9248,6 +9427,11 @@
           "ap2Name": "zDist",
           "ap1ID": "id-774",
           "ap2ID": "id-6813"
+        },
+        {
+          "ap2Name": "PillowBlock",
+          "ap1ID": "id-975",
+          "ap2ID": "id-6820"
         },
         {
           "ap2Name": "LiftingBolt",
@@ -9263,6 +9447,11 @@
           "ap2Name": "MachineBlock",
           "ap1ID": "id-981",
           "ap2ID": "id-6497"
+        },
+        {
+          "ap2Name": "MachineBlock",
+          "ap1ID": "id-981",
+          "ap2ID": "id-6820"
         },
         {
           "ap2Name": "Shape 1",
