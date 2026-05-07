@@ -1169,7 +1169,8 @@
         },
         {
           "name": "NutDiameter",
-          "ioValue": 10
+          "ioValue": 10,
+          "currentEquation": "NutDiameter"
         }
       ],
       "topLevel": false,
@@ -1763,8 +1764,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.29449838187702265,
-          "y": 0.23556581986143188,
+          "x": 0.2955771305285868,
+          "y": 0.20554272517321018,
           "uniqueID": "id-1147",
           "name": "RotorLayer",
           "ioValues": [
