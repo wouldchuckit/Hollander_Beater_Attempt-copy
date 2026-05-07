@@ -8484,28 +8484,22 @@
                 },
                 {
                   "name": "y length",
-                  "ioValue": 24
+                  "ioValue": 50
                 }
               ]
             },
             {
               "atomType": "Equation",
-              "x": 0.34519956850053934,
-              "y": 0.8314087759815243,
+              "x": 0.34466019417475724,
+              "y": 0.8221709006928407,
               "uniqueID": "id-6712",
-              "name": "4 * Nutthick +2 * Gap",
-              "ioValues": [
-                {
-                  "name": "Nutthick",
-                  "ioValue": 1
-                }
-              ],
-              "currentEquation": "4 * Nutthick +2 * Gap"
+              "name": "2* (3 * NutThick + Gap)",
+              "currentEquation": "2* (3 * NutThick + Gap)"
             },
             {
               "atomType": "Equation",
-              "x": 0.34304207119741104,
-              "y": 0.9353348729792148,
+              "x": 0.3435814455231931,
+              "y": 0.9330254041570438,
               "uniqueID": "id-6717",
               "name": "10* NutDiameter",
               "currentEquation": "10* NutDiameter"
@@ -8716,8 +8710,8 @@
             },
             {
               "atomType": "Difference",
-              "x": 0.8683926645091693,
-              "y": 0.25635103926096997,
+              "x": 0.8619201725997842,
+              "y": 0.23325635103926096,
               "uniqueID": "id-6787",
               "ioValues": [
                 {
@@ -8727,30 +8721,6 @@
                 {
                   "name": "remove",
                   "ioValue": "__GEOMETRY_INPUT__"
-                }
-              ]
-            },
-            {
-              "atomType": "Move",
-              "x": 0.8300970873786407,
-              "y": 0.47344110854503463,
-              "uniqueID": "id-6791",
-              "ioValues": [
-                {
-                  "name": "geometry",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "xDist",
-                  "ioValue": 0
-                },
-                {
-                  "name": "yDist",
-                  "ioValue": 0
-                },
-                {
-                  "name": "zDist",
-                  "ioValue": 0
                 }
               ]
             },
@@ -8766,11 +8736,11 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": 430
+                  "ioValue": 560
                 },
                 {
                   "name": "yDist",
-                  "ioValue": 560
+                  "ioValue": 430
                 },
                 {
                   "name": "zDist",
@@ -8859,7 +8829,7 @@
               "ap2ID": "id-6722"
             },
             {
-              "ap2Name": "xDist",
+              "ap2Name": "yDist",
               "ap1ID": "id-6531",
               "ap2ID": "id-6797"
             },
@@ -8892,11 +8862,6 @@
               "ap2Name": "number or geometry",
               "ap1ID": "id-6549",
               "ap2ID": "id-6499"
-            },
-            {
-              "ap2Name": "geometry",
-              "ap1ID": "id-6552",
-              "ap2ID": "id-6549"
             },
             {
               "ap2Name": "retain",
@@ -9149,7 +9114,17 @@
               "ap2ID": "id-6552"
             },
             {
-              "ap2Name": "yDist",
+              "ap2Name": "geometry",
+              "ap1ID": "id-6787",
+              "ap2ID": "id-6549"
+            },
+            {
+              "ap2Name": "remove",
+              "ap1ID": "id-6797",
+              "ap2ID": "id-6787"
+            },
+            {
+              "ap2Name": "xDist",
               "ap1ID": "id-6803",
               "ap2ID": "id-6797"
             }
