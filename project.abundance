@@ -8013,6 +8013,22 @@
                   "ioValue": null
                 }
               ]
+            },
+            {
+              "atomType": "Rectangle",
+              "x": 0.22384034519956852,
+              "y": 0.3279445727482679,
+              "uniqueID": "id-6556",
+              "ioValues": [
+                {
+                  "name": "x length",
+                  "ioValue": 10
+                },
+                {
+                  "name": "y length",
+                  "ioValue": 10
+                }
+              ]
             }
           ],
           "allConnectors": [
