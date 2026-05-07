@@ -9217,31 +9217,38 @@
           "ioValues": [
             {
               "name": "WoodThick",
-              "ioValue": 10
+              "ioValue": 10,
+              "currentEquation": "WoodThick"
             },
             {
               "name": "AxleDiameter",
-              "ioValue": 10
+              "ioValue": 20,
+              "currentEquation": "AxleDiameter"
             },
             {
               "name": "HingeAxleDiameter",
-              "ioValue": 10
+              "ioValue": 15,
+              "currentEquation": "HingeAxleDiameter"
             },
             {
               "name": "AxleX",
-              "ioValue": 10
+              "ioValue": 380,
+              "currentEquation": "AxleX"
             },
             {
               "name": "AxleY",
-              "ioValue": 10
+              "ioValue": 210,
+              "currentEquation": "AxleY"
             },
             {
               "name": "MachineLength",
-              "ioValue": 10
+              "ioValue": 580,
+              "currentEquation": "MachineLength"
             },
             {
               "name": "MachineHeight",
-              "ioValue": 10
+              "ioValue": 430,
+              "currentEquation": "MachineHeight"
             },
             {
               "name": "PillowBlock",
@@ -9249,11 +9256,13 @@
             },
             {
               "name": "Gap",
-              "ioValue": 10
+              "ioValue": 10,
+              "currentEquation": "Gap"
             },
             {
               "name": "WaterHeight",
-              "ioValue": 10
+              "ioValue": 200,
+              "currentEquation": "WaterHeight"
             },
             {
               "name": "MachineBlock",
@@ -9395,9 +9404,121 @@
               "uniqueID": "id-6867",
               "name": "MachineBlock",
               "type": "geometry"
+            },
+            {
+              "atomType": "Rectangle",
+              "x": 0.21413160733549083,
+              "y": 0.2956120092378753,
+              "uniqueID": "id-6871",
+              "ioValues": [
+                {
+                  "name": "x length",
+                  "ioValue": 580
+                },
+                {
+                  "name": "y length",
+                  "ioValue": 200
+                }
+              ]
+            },
+            {
+              "atomType": "Equation",
+              "x": 0.20711974110032363,
+              "y": 0.5103926096997691,
+              "uniqueID": "id-6875",
+              "name": "x/2",
+              "ioValues": [
+                {
+                  "name": "x",
+                  "ioValue": 580
+                }
+              ],
+              "currentEquation": "x/2"
+            },
+            {
+              "atomType": "Equation",
+              "x": 0.2081984897518878,
+              "y": 0.7528868360277136,
+              "uniqueID": "id-6879",
+              "name": "y/2",
+              "ioValues": [
+                {
+                  "name": "y",
+                  "ioValue": 200
+                }
+              ],
+              "currentEquation": "y/2"
+            },
+            {
+              "atomType": "Move",
+              "x": 0.30204962243797195,
+              "y": 0.2817551963048499,
+              "uniqueID": "id-6883",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "xDist",
+                  "ioValue": 290
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": 100
+                },
+                {
+                  "name": "zDist",
+                  "ioValue": 0
+                }
+              ]
+            },
+            {
+              "atomType": "Rectangle",
+              "x": 0.41585760517799353,
+              "y": 0.8175519630484989,
+              "uniqueID": "id-6889",
+              "ioValues": [
+                {
+                  "name": "x length",
+                  "ioValue": 10
+                },
+                {
+                  "name": "y length",
+                  "ioValue": 45
+                }
+              ]
+            },
+            {
+              "atomType": "Equation",
+              "x": 0.3300970873786408,
+              "y": 0.7782909930715934,
+              "uniqueID": "id-6893",
+              "name": "3 * HingeAxleDiameter",
+              "currentEquation": "3 * HingeAxleDiameter"
             }
           ],
           "allConnectors": [
+            {
+              "ap2Name": "x length",
+              "ap1ID": "id-6842",
+              "ap2ID": "id-6871"
+            },
+            {
+              "ap2Name": "x",
+              "ap1ID": "id-6842",
+              "ap2ID": "id-6875"
+            },
+            {
+              "ap2Name": "y length",
+              "ap1ID": "id-6854",
+              "ap2ID": "id-6871"
+            },
+            {
+              "ap2Name": "y",
+              "ap1ID": "id-6854",
+              "ap2ID": "id-6879"
+            },
             {
               "ap2Name": "number or geometry",
               "ap1ID": "id-6857",
@@ -9417,6 +9538,26 @@
               "ap2Name": "Shape 1",
               "ap1ID": "id-6867",
               "ap2ID": "id-6860"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-6871",
+              "ap2ID": "id-6883"
+            },
+            {
+              "ap2Name": "xDist",
+              "ap1ID": "id-6875",
+              "ap2ID": "id-6883"
+            },
+            {
+              "ap2Name": "yDist",
+              "ap1ID": "id-6879",
+              "ap2ID": "id-6883"
+            },
+            {
+              "ap2Name": "y length",
+              "ap1ID": "id-6893",
+              "ap2ID": "id-6889"
             }
           ],
           "fileTypeVersion": 1
