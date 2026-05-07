@@ -7781,51 +7781,63 @@
           "ioValues": [
             {
               "name": "WoodThick",
-              "ioValue": 10
+              "ioValue": 10,
+              "currentEquation": "WoodThick"
             },
             {
               "name": "AxleDiameter",
-              "ioValue": 10
+              "ioValue": 20,
+              "currentEquation": "AxleDiameter"
             },
             {
               "name": "HingeAxleDiameter",
-              "ioValue": 10
+              "ioValue": 15,
+              "currentEquation": "HingeAxleDiameter"
             },
             {
               "name": "RotorRadius",
-              "ioValue": 10
+              "ioValue": 170,
+              "currentEquation": "RotorRadius"
             },
             {
               "name": "TopSlope",
-              "ioValue": 10
+              "ioValue": 30,
+              "currentEquation": "TopSlope"
             },
             {
               "name": "TopThick",
-              "ioValue": 10
+              "ioValue": 40,
+              "currentEquation": "TopThick"
             },
             {
               "name": "NutDiameter",
-              "ioValue": 10
+              "ioValue": 10,
+              "currentEquation": "NutDiameter"
             },
             {
               "name": "AxleX",
-              "ioValue": 10
+              "ioValue": 380,
+              "currentEquation": "AxleX"
             },
             {
               "name": "AxleY",
-              "ioValue": 10
+              "ioValue": 210,
+              "currentEquation": "AxleY"
             },
             {
               "name": "MachineLength",
-              "ioValue": 10
+              "ioValue": 580,
+              "currentEquation": "MachineLength"
             },
             {
               "name": "MachineHeight",
-              "ioValue": 10
+              "ioValue": 430,
+              "currentEquation": "MachineHeight"
             },
             {
               "name": "Gap",
-              "ioValue": 10
+              "ioValue": 10,
+              "currentEquation": "Gap"
             },
             {
               "name": "LiftingBolt",
@@ -7833,11 +7845,17 @@
             },
             {
               "name": "Clearance",
-              "ioValue": 10
+              "ioValue": 5,
+              "currentEquation": "Clearance"
             },
             {
               "name": "LiftingBoltDiameter",
-              "ioValue": 10
+              "ioValue": 5,
+              "currentEquation": "LiftingBoltDiameter"
+            },
+            {
+              "name": "MachineBlock",
+              "ioValue": "__GEOMETRY_INPUT__"
             }
           ],
           "topLevel": false,
@@ -7959,9 +7977,51 @@
               "y": 0.9400000000000004,
               "uniqueID": "id-6543",
               "name": "LiftingBoltDiameter"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0165,
+              "y": 0.9930715935334874,
+              "uniqueID": "id-6546",
+              "name": "MachineBlock",
+              "type": "geometry"
+            },
+            {
+              "atomType": "Tag",
+              "x": 0.919093851132686,
+              "y": 0.4919168591224019,
+              "uniqueID": "id-6549",
+              "name": "LiftingLayer",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "tags": [
+                "LiftingLayer"
+              ]
+            },
+            {
+              "atomType": "Assembly",
+              "x": 0.8581445523193095,
+              "y": 0.4849884526558892,
+              "uniqueID": "id-6552",
+              "ioValues": []
             }
           ],
-          "allConnectors": [],
+          "allConnectors": [
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-6549",
+              "ap2ID": "id-6499"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-6552",
+              "ap2ID": "id-6549"
+            }
+          ],
           "fileTypeVersion": 1
         }
       ],
