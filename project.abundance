@@ -1211,77 +1211,77 @@
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.371824480369515,
+          "y": 0.3510392609699769,
           "uniqueID": "id-783",
           "name": "RotorRadius"
         },
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.3695150115473441,
+          "y": 0.2632794457274827,
           "uniqueID": "id-786",
           "name": "UpSlope"
         },
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.22863741339491916,
+          "y": 0.22401847575057737,
           "uniqueID": "id-789",
           "name": "DownSlope"
         },
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.26096997690531176,
+          "y": 0.19399538106235564,
           "uniqueID": "id-792",
           "name": "TopSlope"
         },
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.2863741339491917,
+          "y": 0.16166281755196305,
           "uniqueID": "id-795",
           "name": "CoverCurve"
         },
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.3233256351039261,
+          "y": 0.5935334872979214,
           "uniqueID": "id-798",
           "name": "ToothStock"
         },
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.36027713625866054,
+          "y": 0.6166281755196305,
           "uniqueID": "id-801",
           "name": "ToothHeight"
         },
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.21939953810623555,
+          "y": 0.13163972286374134,
           "uniqueID": "id-804",
           "name": "ToothThick"
         },
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.20323325635103925,
+          "y": 0.15473441108545033,
           "uniqueID": "id-807",
           "name": "TopThick"
         },
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.22170900692840645,
+          "y": 0.13394919168591224,
           "uniqueID": "id-810",
           "name": "BedPlateWidth"
         },
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.19168591224018475,
+          "y": 0.4849884526558892,
           "uniqueID": "id-813",
           "name": "BaseHeight"
         },
@@ -1316,7 +1316,7 @@
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.3233256351039261,
+          "y": 0.6235565819861432,
           "uniqueID": "id-975",
           "name": "PillowBlock",
           "type": "geometry"
@@ -1346,14 +1346,14 @@
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.3972286374133949,
+          "y": 0.5681293302540416,
           "uniqueID": "id-2123",
           "name": "NumTeeth"
         },
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.2517321016166282,
+          "y": 0.5981524249422633,
           "uniqueID": "id-5175",
           "name": "WaterHeight"
         },
@@ -7756,7 +7756,7 @@
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.3325635103926097,
+          "y": 0.5612009237875288,
           "uniqueID": "id-6481",
           "name": "NutDiameter"
         },
@@ -8016,8 +8016,8 @@
             },
             {
               "atomType": "Rectangle",
-              "x": 0.20496224379719524,
-              "y": 0.279445727482679,
+              "x": 0.18392664509169365,
+              "y": 0.20554272517321018,
               "uniqueID": "id-6556",
               "ioValues": [
                 {
@@ -8032,16 +8032,16 @@
             },
             {
               "atomType": "Equation",
-              "x": 0.11488673139158576,
-              "y": 0.26558891454965355,
+              "x": 0.09978425026968717,
+              "y": 0.16859122401847573,
               "uniqueID": "id-6560",
               "name": "TopThick - Gap",
               "currentEquation": "TopThick - Gap"
             },
             {
               "atomType": "Equation",
-              "x": 0.11488673139158576,
-              "y": 0.4965357967667437,
+              "x": 0.09115426105717367,
+              "y": 0.3510392609699769,
               "uniqueID": "id-6564",
               "name": "x/2",
               "ioValues": [
@@ -8055,8 +8055,8 @@
             },
             {
               "atomType": "Equation",
-              "x": 0.11596548004314995,
-              "y": 0.3879907621247113,
+              "x": 0.09331175836030205,
+              "y": 0.2586605080831409,
               "uniqueID": "id-6568",
               "name": "-y/2 + MachineHeight",
               "ioValues": [
@@ -8069,8 +8069,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.27238403451995685,
-              "y": 0.29792147806004615,
+              "x": 0.24379719525350593,
+              "y": 0.2517321016166282,
               "uniqueID": "id-6572",
               "ioValues": [
                 {
@@ -8090,6 +8090,14 @@
                   "ioValue": 0
                 }
               ]
+            },
+            {
+              "atomType": "Equation",
+              "x": 0.24487594390507011,
+              "y": 0.5612009237875288,
+              "uniqueID": "id-6578",
+              "name": "2* (",
+              "currentEquation": "2* ("
             }
           ],
           "allConnectors": [
