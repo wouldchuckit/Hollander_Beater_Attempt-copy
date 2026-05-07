@@ -8382,16 +8382,16 @@
             },
             {
               "atomType": "Equation",
-              "x": 0.2626752966558792,
-              "y": 0.7136258660508084,
+              "x": 0.2605177993527508,
+              "y": 0.7043879907621247,
               "uniqueID": "id-6676",
               "name": "2* AxleX + .5 * AxleDiameter",
               "currentEquation": "2* AxleX + .5 * AxleDiameter"
             },
             {
               "atomType": "Equation",
-              "x": 0.2680690399137001,
-              "y": 0.8614318706697459,
+              "x": 0.2626752966558792,
+              "y": 0.8498845265588915,
               "uniqueID": "id-6680",
               "name": "x + y",
               "ioValues": [
