@@ -2278,13 +2278,13 @@
                 },
                 {
                   "atomType": "Circle",
-                  "x": 0.12837108953613807,
-                  "y": 0.9053117782909931,
+                  "x": 0.19525350593311758,
+                  "y": 0.8868360277136258,
                   "uniqueID": "id-4249",
                   "ioValues": [
                     {
                       "name": "diameter",
-                      "ioValue": 10
+                      "ioValue": 360
                     }
                   ]
                 },
@@ -2297,8 +2297,8 @@
                 },
                 {
                   "atomType": "Move",
-                  "x": 0.1936353829557713,
-                  "y": 0.9191685912240185,
+                  "x": 0.2831715210355987,
+                  "y": 0.8729792147806004,
                   "uniqueID": "id-4255",
                   "ioValues": [
                     {
@@ -2321,8 +2321,8 @@
                 },
                 {
                   "atomType": "Rotate",
-                  "x": 0.29395900755124055,
-                  "y": 0.3625866050808314,
+                  "x": 0.2858683926645092,
+                  "y": 0.34411085450346424,
                   "uniqueID": "id-4261",
                   "ioValues": [
                     {
@@ -2369,8 +2369,8 @@
                 },
                 {
                   "atomType": "Move",
-                  "x": 0.22491909385113268,
-                  "y": 0.3002309468822171,
+                  "x": 0.21574973031283712,
+                  "y": 0.22401847575057737,
                   "uniqueID": "id-4273",
                   "ioValues": [
                     {
@@ -2379,7 +2379,7 @@
                     },
                     {
                       "name": "xDist",
-                      "ioValue": 0
+                      "ioValue": -170
                     },
                     {
                       "name": "yDist",
@@ -2418,7 +2418,7 @@
                 {
                   "atomType": "Extrude",
                   "x": 0.3543689320388349,
-                  "y": 0.9030023094688221,
+                  "y": 0.8937644341801385,
                   "uniqueID": "id-4285",
                   "ioValues": [
                     {
@@ -2571,8 +2571,8 @@
                 },
                 {
                   "atomType": "Equation",
-                  "x": 0.2367853290183387,
-                  "y": 0.4295612009237875,
+                  "x": 0.21682847896440127,
+                  "y": 0.35334872979214776,
                   "uniqueID": "id-6459",
                   "name": "- T",
                   "ioValues": [
@@ -2582,6 +2582,22 @@
                     }
                   ],
                   "currentEquation": "- T"
+                },
+                {
+                  "atomType": "Equation",
+                  "x": 0.14401294498381878,
+                  "y": 0.19630484988452657,
+                  "uniqueID": "id-6464",
+                  "name": "-RotorRadius",
+                  "currentEquation": "-RotorRadius"
+                },
+                {
+                  "atomType": "Equation",
+                  "x": 0.12513484358144553,
+                  "y": 0.8568129330254042,
+                  "uniqueID": "id-6468",
+                  "name": "2* (RotorRadius + 2*ToothHeight )",
+                  "currentEquation": "2* (RotorRadius + 2*ToothHeight )"
                 }
               ],
               "allConnectors": [
@@ -2729,6 +2745,16 @@
                   "ap2Name": "z-axis degrees",
                   "ap1ID": "id-6459",
                   "ap2ID": "id-4261"
+                },
+                {
+                  "ap2Name": "xDist",
+                  "ap1ID": "id-6464",
+                  "ap2ID": "id-4273"
+                },
+                {
+                  "ap2Name": "diameter",
+                  "ap1ID": "id-6468",
+                  "ap2ID": "id-4249"
                 }
               ],
               "fileTypeVersion": 1
