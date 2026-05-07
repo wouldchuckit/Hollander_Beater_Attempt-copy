@@ -7989,7 +7989,7 @@
             {
               "atomType": "Input",
               "x": 0.0165,
-              "y": 0.9400000000000004,
+              "y": 0.9260969976905312,
               "uniqueID": "id-6543",
               "name": "LiftingBoltDiameter"
             },
@@ -8019,12 +8019,16 @@
             },
             {
               "atomType": "Assembly",
-              "x": 0.8516720604099244,
-              "y": 0.48036951501154734,
+              "x": 0.7691477885652643,
+              "y": 0.3879907621247113,
               "uniqueID": "id-6552",
               "ioValues": [
                 {
                   "name": "Shape 1",
+                  "ioValue": null
+                },
+                {
+                  "name": "Shape 2",
                   "ioValue": null
                 }
               ]
@@ -8117,14 +8121,14 @@
             {
               "atomType": "Input",
               "x": 0.0165,
-              "y": 0.95,
+              "y": 0.76905311778291,
               "uniqueID": "id-6585",
               "name": "ToothHeight"
             },
             {
               "atomType": "Input",
               "x": 0.0165,
-              "y": 0.95,
+              "y": 0.7482678983833718,
               "uniqueID": "id-6588",
               "name": "NutThick"
             },
@@ -8680,9 +8684,41 @@
             },
             {
               "atomType": "Difference",
-              "x": 0.6370010787486515,
-              "y": 0.13856812933025403,
+              "x": 0.6429341963322546,
+              "y": 0.14087759815242495,
               "uniqueID": "id-6778",
+              "ioValues": [
+                {
+                  "name": "retain",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "remove",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Difference",
+              "x": 0.6418554476806904,
+              "y": 0.2909930715935335,
+              "uniqueID": "id-6782",
+              "ioValues": [
+                {
+                  "name": "retain",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "remove",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Difference",
+              "x": 0.8667745415318231,
+              "y": 0.3302540415704388,
+              "uniqueID": "id-6787",
               "ioValues": [
                 {
                   "name": "retain",
@@ -8782,6 +8818,11 @@
               "ap2ID": "id-6694"
             },
             {
+              "ap2Name": "retain",
+              "ap1ID": "id-6546",
+              "ap2ID": "id-6782"
+            },
+            {
               "ap2Name": "number or geometry",
               "ap1ID": "id-6549",
               "ap2ID": "id-6499"
@@ -8790,6 +8831,11 @@
               "ap2Name": "geometry",
               "ap1ID": "id-6552",
               "ap2ID": "id-6549"
+            },
+            {
+              "ap2Name": "retain",
+              "ap1ID": "id-6552",
+              "ap2ID": "id-6787"
             },
             {
               "ap2Name": "geometry",
@@ -8895,11 +8941,6 @@
               "ap2Name": "diameter",
               "ap1ID": "id-6649",
               "ap2ID": "id-6657"
-            },
-            {
-              "ap2Name": "Shape 1",
-              "ap1ID": "id-6653",
-              "ap2ID": "id-6552"
             },
             {
               "ap2Name": "retain",
@@ -9025,6 +9066,21 @@
               "ap2Name": "remove",
               "ap1ID": "id-6771",
               "ap2ID": "id-6778"
+            },
+            {
+              "ap2Name": "remove",
+              "ap1ID": "id-6778",
+              "ap2ID": "id-6782"
+            },
+            {
+              "ap2Name": "Shape 1",
+              "ap1ID": "id-6778",
+              "ap2ID": "id-6552"
+            },
+            {
+              "ap2Name": "Shape 2",
+              "ap1ID": "id-6782",
+              "ap2ID": "id-6552"
             }
           ],
           "fileTypeVersion": 1
