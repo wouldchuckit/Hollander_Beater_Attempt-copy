@@ -8290,8 +8290,8 @@
             },
             {
               "atomType": "Difference",
-              "x": 0.7793959007551241,
-              "y": 0.45727482678983833,
+              "x": 0.6850053937432579,
+              "y": 0.4780600461893765,
               "uniqueID": "id-6653",
               "ioValues": [
                 {
@@ -8364,7 +8364,7 @@
               "ioValues": [
                 {
                   "name": "diameter",
-                  "ioValue": 782
+                  "ioValue": 737
                 }
               ]
             },
@@ -8376,25 +8376,25 @@
               "ioValues": [
                 {
                   "name": "diameter",
-                  "ioValue": 738
+                  "ioValue": 693
                 }
               ]
             },
             {
               "atomType": "Equation",
-              "x": 0.2259978425026969,
-              "y": 0.6789838337182448,
+              "x": 0.16666666666666666,
+              "y": 0.76905311778291,
               "uniqueID": "id-6676",
-              "name": "2* (AxleX + .5 * AxleDiameter + 1)",
-              "currentEquation": "2* (AxleX + .5 * AxleDiameter + 1)"
+              "name": "2* (AxleX + .5 * AxleDiameter - 1.5 *HingeAxleDiameter + 1)",
+              "currentEquation": "2* (AxleX + .5 * AxleDiameter - 1.5 *HingeAxleDiameter + 1)"
             },
             {
               "atomType": "Equation",
-              "x": 0.22006472491909385,
-              "y": 0.7829099307159354,
+              "x": 0.16774541531823084,
+              "y": 0.8960739030023095,
               "uniqueID": "id-6684",
-              "name": "2* (AxleX - .5 * AxleDiameter - 1)",
-              "currentEquation": "2* (AxleX - .5 * AxleDiameter - 1)"
+              "name": "2* (AxleX - .5 * AxleDiameter - 1.5 *HingeAxleDiameter - 1)",
+              "currentEquation": "2* (AxleX - .5 * AxleDiameter - 1.5 *HingeAxleDiameter - 1)"
             },
             {
               "atomType": "Difference",
@@ -8446,8 +8446,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.49137001078748654,
-              "y": 0.7113163972286374,
+              "x": 0.48274002157497303,
+              "y": 0.7020785219399538,
               "uniqueID": "id-6702",
               "ioValues": [
                 {
@@ -8460,13 +8460,61 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": 0
+                  "ioValue": 210
                 },
                 {
                   "name": "zDist",
                   "ioValue": 0
                 }
               ]
+            },
+            {
+              "atomType": "Rectangle",
+              "x": 0.441747572815534,
+              "y": 0.8983833718244804,
+              "uniqueID": "id-6708",
+              "ioValues": [
+                {
+                  "name": "x length",
+                  "ioValue": 10
+                },
+                {
+                  "name": "y length",
+                  "ioValue": 10
+                }
+              ]
+            },
+            {
+              "atomType": "Equation",
+              "x": 0.34519956850053934,
+              "y": 0.8314087759815243,
+              "uniqueID": "id-6712",
+              "name": "4 * Nutthick +2 * Gap",
+              "ioValues": [
+                {
+                  "name": "Nutthick",
+                  "ioValue": 1
+                }
+              ],
+              "currentEquation": "4 * Nutthick +2 * Gap"
+            },
+            {
+              "atomType": "Equation",
+              "x": 0.34304207119741104,
+              "y": 0.9353348729792148,
+              "uniqueID": "id-6717",
+              "name": "x + y",
+              "ioValues": [
+                {
+                  "name": "x",
+                  "ioValue": 1
+                },
+                {
+                  "name": "y",
+                  "ioValue": 1
+                }
+              ],
+              "currentEquation": "x + y"
             }
           ],
           "allConnectors": [
@@ -8504,6 +8552,11 @@
               "ap2Name": "yDist",
               "ap1ID": "id-6525",
               "ap2ID": "id-6660"
+            },
+            {
+              "ap2Name": "yDist",
+              "ap1ID": "id-6525",
+              "ap2ID": "id-6702"
             },
             {
               "ap2Name": "x length",
