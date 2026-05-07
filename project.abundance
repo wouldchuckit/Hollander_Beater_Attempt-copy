@@ -8108,11 +8108,11 @@
             },
             {
               "atomType": "Equation",
-              "x": 0.07011866235167205,
-              "y": 0.7113163972286374,
+              "x": 0.5879180151024811,
+              "y": 0.7967667436489608,
               "uniqueID": "id-6578",
-              "name": "2* (RotorRadius + ToothHeight + Clearance + 6*Gap)",
-              "currentEquation": "2* (RotorRadius + ToothHeight + Clearance + 6*Gap)"
+              "name": "MachineHeight - AxleY - TopThick -2*NutThick + Gap",
+              "currentEquation": "MachineHeight - AxleY - TopThick -2*NutThick + Gap"
             },
             {
               "atomType": "Input",
@@ -8546,8 +8546,8 @@
             },
             {
               "atomType": "Difference",
-              "x": 0.6413160733549083,
-              "y": 0.7551963048498845,
+              "x": 0.8511326860841424,
+              "y": 0.7413394919168591,
               "uniqueID": "id-6733",
               "ioValues": [
                 {
@@ -8562,20 +8562,20 @@
             },
             {
               "atomType": "Circle",
-              "x": 0.5555555555555556,
-              "y": 0.9030023094688221,
+              "x": 0.8036677454153182,
+              "y": 0.9214780600461893,
               "uniqueID": "id-6737",
               "ioValues": [
                 {
                   "name": "diameter",
-                  "ioValue": 480
+                  "ioValue": 557.3654546166276
                 }
               ]
             },
             {
               "atomType": "Move",
-              "x": 0.6758360302049622,
-              "y": 0.930715935334873,
+              "x": 0.8554476806903991,
+              "y": 0.8568129330254042,
               "uniqueID": "id-6740",
               "ioValues": [
                 {
@@ -8595,6 +8595,32 @@
                   "ioValue": 0
                 }
               ]
+            },
+            {
+              "atomType": "Equation",
+              "x": 0.5852211434735707,
+              "y": 0.9076212471131639,
+              "uniqueID": "id-6746",
+              "name": "MachineLength - 1.5 * HingeAxleDiameter - 3 *NutDiameter",
+              "currentEquation": "MachineLength - 1.5 * HingeAxleDiameter - 3 *NutDiameter"
+            },
+            {
+              "atomType": "Equation",
+              "x": 0.7486515641855448,
+              "y": 0.8568129330254042,
+              "uniqueID": "id-6750",
+              "name": "sqrt(x^2 + y^2)",
+              "ioValues": [
+                {
+                  "name": "x",
+                  "ioValue": 180
+                },
+                {
+                  "name": "y",
+                  "ioValue": 527.5
+                }
+              ],
+              "currentEquation": "sqrt(x^2 + y^2)"
             }
           ],
           "allConnectors": [
@@ -8714,9 +8740,9 @@
               "ap2ID": "id-6572"
             },
             {
-              "ap2Name": "diameter",
+              "ap2Name": "x",
               "ap1ID": "id-6578",
-              "ap2ID": "id-6737"
+              "ap2ID": "id-6750"
             },
             {
               "ap2Name": "z-axis degrees",
@@ -8867,6 +8893,16 @@
               "ap2Name": "remove",
               "ap1ID": "id-6740",
               "ap2ID": "id-6733"
+            },
+            {
+              "ap2Name": "y",
+              "ap1ID": "id-6746",
+              "ap2ID": "id-6750"
+            },
+            {
+              "ap2Name": "diameter",
+              "ap1ID": "id-6750",
+              "ap2ID": "id-6737"
             }
           ],
           "fileTypeVersion": 1
