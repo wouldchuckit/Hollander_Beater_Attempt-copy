@@ -7771,6 +7771,30 @@
               "ioValue": null
             }
           ]
+        },
+        {
+          "atomType": "Molecule",
+          "x": 0.22653721682847894,
+          "y": 0.4457274826789838,
+          "uniqueID": "id-6497",
+          "name": "Molecule",
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-6499",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            }
+          ],
+          "allConnectors": [],
+          "fileTypeVersion": 1
         }
       ],
       "allConnectors": [
