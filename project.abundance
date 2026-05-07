@@ -1265,21 +1265,21 @@
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.13163972286374134,
+          "y": 0.4665127020785219,
           "uniqueID": "id-804",
           "name": "ToothThick"
         },
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.15473441108545033,
+          "y": 0.4919168591224019,
           "uniqueID": "id-807",
           "name": "TopThick"
         },
         {
           "atomType": "Input",
           "x": 0.0165,
-          "y": 0.13394919168591224,
+          "y": 0.41570438799076215,
           "uniqueID": "id-810",
           "name": "BedPlateWidth"
         },
@@ -1364,8 +1364,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.10841423948220064,
-          "y": 0.18475750577367206,
+          "x": 0.1208198489751888,
+          "y": 0.22863741339491916,
           "uniqueID": "id-981",
           "name": "MachineBlock",
           "ioValues": [
@@ -1769,8 +1769,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.3193096008629989,
-          "y": 0.17090069284064663,
+          "x": 0.37216828478964403,
+          "y": 0.21478060046189376,
           "uniqueID": "id-1147",
           "name": "RotorLayer",
           "ioValues": [
@@ -7774,13 +7774,17 @@
             {
               "name": "Shape 1",
               "ioValue": null
+            },
+            {
+              "name": "Shape 2",
+              "ioValue": null
             }
           ]
         },
         {
           "atomType": "Molecule",
-          "x": 0.22653721682847894,
-          "y": 0.4457274826789838,
+          "x": 0.38781014023732474,
+          "y": 0.584295612009238,
           "uniqueID": "id-6497",
           "name": "LiftingLayer",
           "ioValues": [
@@ -9179,9 +9183,38 @@
           "y": 0.95,
           "uniqueID": "id-6591",
           "name": "NutThick"
+        },
+        {
+          "atomType": "Move",
+          "x": 0.5064724919093851,
+          "y": 0.45265588914549654,
+          "uniqueID": "id-6813",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 0
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 10
+            }
+          ]
         }
       ],
       "allConnectors": [
+        {
+          "ap2Name": "zDist",
+          "ap1ID": "id-774",
+          "ap2ID": "id-6813"
+        },
         {
           "ap2Name": "LiftingBolt",
           "ap1ID": "id-1074",
@@ -9206,6 +9239,16 @@
           "ap2Name": "number or geometry",
           "ap1ID": "id-6493",
           "ap2ID": "id-772"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-6497",
+          "ap2ID": "id-6813"
+        },
+        {
+          "ap2Name": "Shape 2",
+          "ap1ID": "id-6813",
+          "ap2ID": "id-6493"
         }
       ],
       "fileTypeVersion": 1
