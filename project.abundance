@@ -1166,6 +1166,10 @@
           "name": "LiftingBoltDiameter",
           "ioValue": 5,
           "currentEquation": "LiftingBoltDiameter"
+        },
+        {
+          "name": "NutDiameter",
+          "ioValue": 10
         }
       ],
       "topLevel": false,
@@ -1877,6 +1881,11 @@
               "name": "LiftingBoltDiameter",
               "ioValue": 5,
               "currentEquation": "LiftingBoltDiameter"
+            },
+            {
+              "name": "NutDiameter",
+              "ioValue": 10,
+              "currentEquation": "NutDiameter"
             }
           ],
           "topLevel": false,
@@ -2168,6 +2177,16 @@
                   "name": "WaterHeight",
                   "ioValue": 200,
                   "currentEquation": "WaterHeight"
+                },
+                {
+                  "name": "LiftingBoltDiameter",
+                  "ioValue": 5,
+                  "currentEquation": "LiftingBoltDiameter"
+                },
+                {
+                  "name": "NutDiamter",
+                  "ioValue": 10,
+                  "currentEquation": "NutDiameter"
                 }
               ],
               "topLevel": false,
@@ -2388,6 +2407,10 @@
                       "ioValue": "__GEOMETRY_INPUT__"
                     },
                     {
+                      "name": "xDist",
+                      "ioValue": -190
+                    },
+                    {
                       "name": "yDist",
                       "ioValue": 0
                     },
@@ -2591,11 +2614,11 @@
                 },
                 {
                   "atomType": "Equation",
-                  "x": 0.13915857605177992,
-                  "y": 0.348729792147806,
+                  "x": 0.1407766990291262,
+                  "y": 0.3394919168591224,
                   "uniqueID": "id-6464",
-                  "name": "-RotorRadius -",
-                  "currentEquation": "-RotorRadius -"
+                  "name": "-RotorRadius -2*LiftingBoltDiameter -NutDiameter",
+                  "currentEquation": "-RotorRadius -2*LiftingBoltDiameter -NutDiameter"
                 },
                 {
                   "atomType": "Equation",
@@ -2604,6 +2627,20 @@
                   "uniqueID": "id-6468",
                   "name": "2* (RotorRadius + 2*ToothHeight )",
                   "currentEquation": "2* (RotorRadius + 2*ToothHeight )"
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.0165,
+                  "y": 0.8800000000000003,
+                  "uniqueID": "id-6478",
+                  "name": "LiftingBoltDiameter"
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.0165,
+                  "y": 0.9400000000000004,
+                  "uniqueID": "id-6487",
+                  "name": "NutDiamter"
                 }
               ],
               "allConnectors": [
@@ -3950,8 +3987,8 @@
             },
             {
               "atomType": "Molecule",
-              "x": 0.16936353829557713,
-              "y": 0.6812933025404158,
+              "x": 0.1699029126213592,
+              "y": 0.651270207852194,
               "uniqueID": "id-1236",
               "name": "Rotor",
               "ioValues": [
@@ -7645,6 +7682,13 @@
               "y": 0.95,
               "uniqueID": "id-6472",
               "name": "LiftingBoltDiameter"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0165,
+              "y": 0.95,
+              "uniqueID": "id-6484",
+              "name": "NutDiameter"
             }
           ],
           "allConnectors": [
@@ -7707,6 +7751,13 @@
           "y": 0.95,
           "uniqueID": "id-6475",
           "name": "LiftingBoltDiameter"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.0165,
+          "y": 0.95,
+          "uniqueID": "id-6481",
+          "name": "NutDiameter"
         }
       ],
       "allConnectors": [
